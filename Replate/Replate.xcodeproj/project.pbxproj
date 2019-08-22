@@ -10,6 +10,9 @@
 		D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F38BD7230E396600C007F6 /* AppDelegate.swift */; };
 		D8F38BDF230E396800C007F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BDE230E396800C007F6 /* Assets.xcassets */; };
 		D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */; };
+		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
+		F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */; };
+		F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +21,9 @@
 		D8F38BDE230E396800C007F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F38BE1230E396800C007F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F38BE3230E396800C007F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessSignUpForm.storyboard; sourceTree = "<group>"; };
+		F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VolunteerSignUpForm.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,9 @@
 			children = (
 				D8F38BD7230E396600C007F6 /* AppDelegate.swift */,
 				D8F38BDE230E396800C007F6 /* Assets.xcassets */,
+				F3CBFD39230EE544003A7297 /* Main.storyboard */,
+				F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */,
+				F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */,
 				D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */,
 				D8F38BE3230E396800C007F6 /* Info.plist */,
 			);
@@ -116,7 +125,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */,
+				F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */,
 				D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */,
+				F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */,
 				D8F38BDF230E396800C007F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
