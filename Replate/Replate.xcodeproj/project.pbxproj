@@ -5,7 +5,7 @@
 	};
 	objectVersion = 50;
 	objects = {
-
+  
 /* Begin PBXBuildFile section */
 		D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F38BD7230E396600C007F6 /* AppDelegate.swift */; };
 		D8F38BDF230E396800C007F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BDE230E396800C007F6 /* Assets.xcassets */; };
@@ -18,6 +18,7 @@
 /* Begin PBXFileReference section */
 		D8F38BD4230E396600C007F6 /* Replate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Replate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F38BD7230E396600C007F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+
 		D8F38BDE230E396800C007F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F38BE1230E396800C007F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F38BE3230E396800C007F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		D8F38BD6230E396600C007F6 /* Replate */ = {
 			isa = PBXGroup;
 			children = (
+				E3C90166230F0F0F009F9844 /* View Controllers */,
 				D8F38BD7230E396600C007F6 /* AppDelegate.swift */,
 				D8F38BDE230E396800C007F6 /* Assets.xcassets */,
 				F3CBFD39230EE544003A7297 /* Main.storyboard */,
@@ -65,6 +67,22 @@
 				D8F38BE3230E396800C007F6 /* Info.plist */,
 			);
 			path = Replate;
+			sourceTree = "<group>";
+		};
+		E3C90166230F0F0F009F9844 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3C90167230F0F2C009F9844 /* WelcomeViewController.swift */,
+				E3C90169230F0F40009F9844 /* SignInViewController.swift */,
+				E3C9016B230F0F58009F9844 /* SignUpOneViewController.swift */,
+				E3C9016D230F0F77009F9844 /* SignUpTwoViewController.swift */,
+				E3C9016F230F0F94009F9844 /* SignUpThreeViewController.swift */,
+				E3C90177230F1022009F9844 /* EditDonationViewController.swift */,
+				E3C90171230F0FBD009F9844 /* DashboardCollectionViewController.swift */,
+				E3C90173230F0FED009F9844 /* DetailViewController.swift */,
+				E3C90175230F1009009F9844 /* AddDonationViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
+				E3C90170230F0F94009F9844 /* SignUpThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
