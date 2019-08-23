@@ -24,7 +24,7 @@
                                 <color key="textColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="QWE-Wt-nl3">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="QWE-Wt-nl3">
                                 <rect key="frame" x="40" y="244" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="k43-kB-55l"/>
@@ -33,7 +33,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="fGK-JN-QFu">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="fGK-JN-QFu">
                                 <rect key="frame" x="40" y="374" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="z48-BE-Ytp"/>
@@ -58,7 +58,7 @@
                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Email" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="Lrm-35-rtU">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Email" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="Lrm-35-rtU">
                                 <rect key="frame" x="40" y="309" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="NJj-CH-hLW"/>
@@ -67,7 +67,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Confirm Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-pu-0Lg">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Confirm Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="5Yn-pu-0Lg">
                                 <rect key="frame" x="40" y="439" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="e1T-Dk-YRz"/>
@@ -188,7 +188,7 @@
         <scene sceneID="ehf-Mg-gJ8">
             <objects>
                 <viewController id="six-7c-egF" customClass="SignUpThreeViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Osd-74-XPW">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="Osd-74-XPW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -204,7 +204,7 @@
                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Phone Number" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="znE-Yq-sr7">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="    Phone Number" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="znE-Yq-sr7">
                                 <rect key="frame" x="40" y="335.5" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="w3g-gw-35j"/>

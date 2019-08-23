@@ -24,7 +24,7 @@ class SignUpThreeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
         // Do any additional setup after loading the view.
     }
     
@@ -43,5 +43,21 @@ class SignUpThreeViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Helper Functions
+    func updateViews() {
+        updateTextFields()
+    }
+    
+    func updateTextFields() {
+        if self.view.tag == 0 {
+            businessNameTextField.addLeftPadding(10)
+            businessAddressTextField.addLeftPadding(10)
+            businessCityStateZipCodeTextField.addLeftPadding(10)
+            businessPhoneNumberTextField.addLeftPadding(10)
+        } else {
+            volunteerPhoneNumberTextField.addLeftPadding(10)
+        }
+    }
 
 }

@@ -27,7 +27,7 @@ class SignUpTwoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateTextFields()
+        updateViews()
         // Do any additional setup after loading the view.
     }
     
@@ -61,6 +61,10 @@ class SignUpTwoViewController: UIViewController {
     }
     
     // MARK: Helper Functions
+    func updateViews() {
+        updateTextFields()
+    }
+    
     func updateTextFields() {
         if self.view.tag == 0 {
         businessUsernameTextField.addLeftPadding(10)
@@ -76,7 +80,6 @@ class SignUpTwoViewController: UIViewController {
     }
     
     func passwordsDontMatch() {
-        
         if nextPagePressed.tag == 0 {
             if businessPasswordTextField.text != businessConfirmPasswordTextField.text {
                 let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
@@ -95,6 +98,4 @@ class SignUpTwoViewController: UIViewController {
             }
         }
     }
-    
-
 }

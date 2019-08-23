@@ -16,7 +16,7 @@ class SignInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateViews()
         // Do any additional setup after loading the view.
     }
     
@@ -38,5 +38,15 @@ class SignInViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Helper Functions
+    func updateViews() {
+        updateTextFields()
+    }
+    
+    func updateTextFields() {
+        loginUsernameTextField.addLeftPadding(10)
+        loginPasswordTextField.addLeftPadding(10)
+    }
 
 }
