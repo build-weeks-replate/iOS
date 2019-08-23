@@ -9,11 +9,22 @@
 import UIKit
 
 class SignInViewController: UIViewController {
+    
+    @IBOutlet weak var loginUsernameTextField: UITextField!
+    @IBOutlet weak var loginPasswordTextField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func showPasswordPressed(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func signInPressed(_ sender: UIButton) {
     }
     
 

@@ -9,6 +9,8 @@
 import UIKit
 
 class SignUpOneViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +18,7 @@ class SignUpOneViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

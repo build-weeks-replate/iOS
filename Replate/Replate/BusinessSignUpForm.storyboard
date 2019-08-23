@@ -13,7 +13,7 @@
         <!--Sign Up Two View Controller-->
         <scene sceneID="Hoh-ux-ltW">
             <objects>
-                <viewController id="xXB-ib-fKu" customClass="SignUpTwoViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BusinessSignUpTwo" id="xXB-ib-fKu" customClass="SignUpTwoViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TeF-Jv-L3M">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showPasswordPressed:" destination="xXB-ib-fKu" eventType="touchUpInside" id="UhC-8A-PuA"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSINESS OWNER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0SI-LT-Obq">
                                 <rect key="frame" x="144.5" y="193" width="125" height="16.5"/>
@@ -79,6 +82,9 @@
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showConfirmPasswordPressed:" destination="xXB-ib-fKu" eventType="touchUpInside" id="LWG-SH-Qcu"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcr-7W-buY">
                                 <rect key="frame" x="40" y="517" width="334" height="50"/>
@@ -91,7 +97,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="W1b-3F-4sA" kind="show" identifier="BusinessSignUpPage2Segue" id="ZaV-ls-LGl"/>
+                                    <action selector="nextPagePressed:" destination="xXB-ib-fKu" eventType="touchUpInside" id="ZbZ-Ql-C6z"/>
+                                    <segue destination="W1b-3F-4sA" kind="show" identifier="BusinessSignUpPageTwo" id="ZaV-ls-LGl"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="5RN-5g-k6T" userLabel="Sign In Stack">
@@ -109,6 +116,9 @@
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="xqd-mU-Ocg" kind="show" id="xcw-gN-jzJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -145,10 +155,24 @@
                         <viewLayoutGuide key="safeArea" id="UkI-4r-Ic6"/>
                     </view>
                     <navigationItem key="navigationItem" id="idb-li-R5d"/>
+                    <connections>
+                        <outlet property="businessConfirmPasswordTextField" destination="6M5-vJ-s8i" id="rPj-PZ-vS1"/>
+                        <outlet property="businessEmailTextField" destination="gXH-Dm-tIC" id="Sxu-Z0-1Ez"/>
+                        <outlet property="businessPasswordTextField" destination="omW-hG-PHf" id="b5B-od-jq0"/>
+                        <outlet property="businessUsernameTextField" destination="7wu-U9-QLI" id="p95-QT-D97"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yW9-6J-EkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="997.10144927536237" y="107.8125"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="wx9-Wz-4YU">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SignIn" id="xqd-mU-Ocg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P00-Yq-epI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1499" y="214"/>
         </scene>
         <!--Sign Up Three View Controller-->
         <scene sceneID="mFV-Mg-Cbu">
@@ -216,6 +240,9 @@
                                 <state key="normal" title="Create account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="W1b-3F-4sA" eventType="touchUpInside" id="HQ8-RO-xds"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -242,10 +269,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NeK-0T-Sw2"/>
                     </view>
+                    <connections>
+                        <outlet property="businessAddressTextField" destination="wEk-ez-PUV" id="rAC-WT-RAh"/>
+                        <outlet property="businessCityStateZipCodeTextField" destination="x7d-uk-Yd2" id="lhy-fz-FP1"/>
+                        <outlet property="businessNameTextField" destination="O99-ou-u8q" id="6a6-lH-RYy"/>
+                        <outlet property="businessPhoneNumberTextField" destination="WQI-Qv-ZtC" id="XrY-8q-dii"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uc9-7C-Q15" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1885.5072463768117" y="112.5"/>
+            <point key="canvasLocation" x="2196" y="108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cOa-27-hlW">

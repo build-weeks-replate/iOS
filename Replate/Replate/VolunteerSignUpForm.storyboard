@@ -13,7 +13,7 @@
         <!--Sign Up Two View Controller-->
         <scene sceneID="eye-Uk-CUH">
             <objects>
-                <viewController id="45o-eP-WzG" customClass="SignUpTwoViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VolunteerSignUpTwo" id="45o-eP-WzG" customClass="SignUpTwoViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YAQ-1r-Rcl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +48,9 @@
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showPasswordPressed:" destination="45o-eP-WzG" eventType="touchUpInside" id="dnc-kC-5ya"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VOLUNTEER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pbM-dl-v1M">
                                 <rect key="frame" x="166" y="193" width="82" height="16.5"/>
@@ -79,6 +82,9 @@
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showConfirmPasswordPressed:" destination="45o-eP-WzG" eventType="touchUpInside" id="rqI-Hl-hsy"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGu-MF-kx9">
                                 <rect key="frame" x="40" y="517" width="334" height="50"/>
@@ -91,7 +97,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="six-7c-egF" kind="show" identifier="VolunteerSignUpPage2Segue" id="mei-Wb-cV5"/>
+                                    <action selector="nextPagePressed:" destination="45o-eP-WzG" eventType="touchUpInside" id="MuU-Zf-dSd"/>
+                                    <segue destination="six-7c-egF" kind="show" identifier="VolunteerSignUpPageTwo" id="mei-Wb-cV5"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4HD-HX-XJ9" userLabel="Sign In Stack">
@@ -109,6 +116,9 @@
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="5l9-Xm-9yT" kind="presentation" id="4f9-GA-Ipz"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -145,10 +155,24 @@
                         <viewLayoutGuide key="safeArea" id="fqZ-Jk-0Di"/>
                     </view>
                     <navigationItem key="navigationItem" id="FMM-bN-Opn"/>
+                    <connections>
+                        <outlet property="volunteerConfirmPasswordTextField" destination="5Yn-pu-0Lg" id="Jrn-Kb-v3v"/>
+                        <outlet property="volunteerEmailTextField" destination="Lrm-35-rtU" id="Bc6-he-1Tc"/>
+                        <outlet property="volunteerPasswordTextField" destination="fGK-JN-QFu" id="SrY-gJ-NGc"/>
+                        <outlet property="volunteerUsernameTextField" destination="QWE-Wt-nl3" id="w0C-nh-Ni6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TdX-p3-WP4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="72.991071428571431"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="gJD-EM-8aW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SignIn" id="5l9-Xm-9yT" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q5Z-u9-nFE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="204"/>
         </scene>
         <!--Sign Up Three View Controller-->
         <scene sceneID="ehf-Mg-gJ8">
@@ -189,6 +213,9 @@
                                 <state key="normal" title="Create account">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="six-7c-egF" eventType="touchUpInside" id="qyX-0V-7fY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -206,10 +233,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j5X-7S-syp"/>
                     </view>
+                    <connections>
+                        <outlet property="volunteerPhoneNumberTextField" destination="znE-Yq-sr7" id="AKZ-C9-Cit"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RgM-vk-HRR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1734.7826086956522" y="73.660714285714278"/>
+            <point key="canvasLocation" x="1994" y="73"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nxw-BP-px5">
