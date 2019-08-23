@@ -63,7 +63,7 @@ class DashboardCollectionViewController: UICollectionViewController {
         
         
         let food = foodController.foodItems[indexPath.item]
-        cell.imageView.image = UIImage(named: "Group 5")
+        cell.imageView.image = UIImage(named: "bagel")
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
         
