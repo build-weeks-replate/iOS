@@ -248,7 +248,7 @@
                                                                 <rect key="frame" x="0.0" y="20.333333333333314" width="319" height="60"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="gQ7-aT-xhX"/>
+                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="gQ7-aT-xhX"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -289,15 +289,39 @@
                                     <constraint firstAttribute="trailing" secondItem="CyW-jZ-YJy" secondAttribute="trailing" id="k16-Jh-8GZ"/>
                                 </constraints>
                             </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2H-WB-Rkn">
+                                <rect key="frame" x="0.0" y="718" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNk-H1-B8O">
+                                        <rect key="frame" x="25" y="10" width="325" height="40"/>
+                                        <color key="backgroundColor" red="0.97647058823529409" green="0.62745098039215685" blue="0.12156862745098039" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Claim">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pNk-H1-B8O" secondAttribute="trailing" constant="25" id="2Qj-ts-6bb"/>
+                                    <constraint firstItem="pNk-H1-B8O" firstAttribute="leading" secondItem="n2H-WB-Rkn" secondAttribute="leading" constant="25" id="IHo-7d-7Ys"/>
+                                    <constraint firstAttribute="height" constant="60" id="eWW-hT-462"/>
+                                    <constraint firstItem="pNk-H1-B8O" firstAttribute="top" secondItem="n2H-WB-Rkn" secondAttribute="top" constant="10" id="l1j-cq-bSj"/>
+                                    <constraint firstAttribute="bottom" secondItem="pNk-H1-B8O" secondAttribute="bottom" constant="10" id="mbp-wA-2hV"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="jCj-c7-PHs" firstAttribute="top" secondItem="ceh-Pk-IHe" secondAttribute="top" id="5lK-2G-Yhp"/>
                             <constraint firstItem="CyW-jZ-YJy" firstAttribute="width" secondItem="dhd-Ep-sm5" secondAttribute="width" id="IoB-av-KAo"/>
+                            <constraint firstItem="ceh-Pk-IHe" firstAttribute="bottom" secondItem="n2H-WB-Rkn" secondAttribute="bottom" id="JEL-IN-cgZ"/>
                             <constraint firstItem="ceh-Pk-IHe" firstAttribute="trailing" secondItem="jCj-c7-PHs" secondAttribute="trailing" id="KEE-Wb-WVr"/>
                             <constraint firstItem="ceh-Pk-IHe" firstAttribute="bottom" secondItem="jCj-c7-PHs" secondAttribute="bottom" id="R4T-su-jVt"/>
                             <constraint firstItem="CyW-jZ-YJy" firstAttribute="height" secondItem="dhd-Ep-sm5" secondAttribute="height" priority="250" id="Wkm-pJ-g1g"/>
                             <constraint firstItem="jCj-c7-PHs" firstAttribute="leading" secondItem="ceh-Pk-IHe" secondAttribute="leading" id="XNO-hO-I7y"/>
+                            <constraint firstItem="n2H-WB-Rkn" firstAttribute="leading" secondItem="ceh-Pk-IHe" secondAttribute="leading" id="aC0-o2-Ab9"/>
+                            <constraint firstItem="n2H-WB-Rkn" firstAttribute="trailing" secondItem="ceh-Pk-IHe" secondAttribute="trailing" id="s3l-a8-qhn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ceh-Pk-IHe"/>
                     </view>
@@ -312,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mUt-qA-B7q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="941.60000000000002" y="164.77832512315271"/>
+            <point key="canvasLocation" x="1063" y="166"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ENt-wg-iiO">
