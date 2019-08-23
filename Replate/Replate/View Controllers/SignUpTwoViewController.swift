@@ -21,7 +21,8 @@ class SignUpTwoViewController: UIViewController {
     @IBOutlet weak var volunteerEmailTextField: UITextField!
     @IBOutlet weak var volunteerPasswordTextField: UITextField!
     @IBOutlet weak var volunteerConfirmPasswordTextField: UITextField!
-    
+
+    @IBOutlet weak var nextPagePressed: UIButton!
     
     
     override func viewDidLoad() {
@@ -40,6 +41,7 @@ class SignUpTwoViewController: UIViewController {
     
     
     @IBAction func nextPagePressed(_ sender: UIButton) {
+        passwordsDontMatch()
     }
     
     
@@ -57,5 +59,29 @@ class SignUpTwoViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    // MARK: Helper Functions
+    
+    func passwordsDontMatch() {
+        
+        if nextPagePressed.tag == 0 {
+            if businessPasswordTextField.text != businessConfirmPasswordTextField.text {
+                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        } else if nextPagePressed.tag == 1 {
+            if volunteerPasswordTextField.text != volunteerConfirmPasswordTextField.text {
+                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+    
 
 }

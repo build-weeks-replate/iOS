@@ -7,4 +7,11 @@
 //
 
 import Foundation
+import UIKit
+
+class BusinessController {
+    private(set) var businesses: [Business] = []
+    
+    
+}
 

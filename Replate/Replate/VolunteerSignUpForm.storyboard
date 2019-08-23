@@ -86,7 +86,7 @@
                                     <action selector="showConfirmPasswordPressed:" destination="45o-eP-WzG" eventType="touchUpInside" id="rqI-Hl-hsy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGu-MF-kx9">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGu-MF-kx9">
                                 <rect key="frame" x="40" y="517" width="334" height="50"/>
                                 <color key="backgroundColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -164,6 +164,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="FMM-bN-Opn"/>
                     <connections>
+                        <outlet property="nextPagePressed" destination="sGu-MF-kx9" id="4gg-3e-Arm"/>
                         <outlet property="volunteerConfirmPasswordTextField" destination="5Yn-pu-0Lg" id="Jrn-Kb-v3v"/>
                         <outlet property="volunteerEmailTextField" destination="Lrm-35-rtU" id="Bc6-he-1Tc"/>
                         <outlet property="volunteerPasswordTextField" destination="fGK-JN-QFu" id="SrY-gJ-NGc"/>

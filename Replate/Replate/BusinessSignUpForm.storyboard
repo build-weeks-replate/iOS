@@ -168,6 +168,7 @@
                         <outlet property="businessEmailTextField" destination="gXH-Dm-tIC" id="Sxu-Z0-1Ez"/>
                         <outlet property="businessPasswordTextField" destination="omW-hG-PHf" id="b5B-od-jq0"/>
                         <outlet property="businessUsernameTextField" destination="7wu-U9-QLI" id="p95-QT-D97"/>
+                        <outlet property="nextPagePressed" destination="Hcr-7W-buY" id="IlT-rl-beh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yW9-6J-EkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
