@@ -212,17 +212,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-IB-9L4" userLabel="Role Selection Stack">
-                                <rect key="frame" x="181" y="325" width="52" height="18"/>
+                                <rect key="frame" x="37" y="325" width="340" height="163"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKp-Nz-ekC">
-                                        <rect key="frame" x="0.0" y="0.0" width="16" height="18"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="163"/>
                                         <state key="normal" backgroundImage="businessOwnerButton"/>
                                         <connections>
                                             <segue destination="bdH-TB-qW7" kind="show" identifier="CreateBusinessUser" id="ZzV-Lz-KfA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-VV-qN1">
-                                        <rect key="frame" x="36" y="0.0" width="16" height="18"/>
+                                        <rect key="frame" x="180" y="0.0" width="160" height="163"/>
                                         <state key="normal" backgroundImage="volunteerButton"/>
                                         <connections>
                                             <segue destination="Cl3-7d-xd3" kind="show" identifier="CreateVolunteerUser" id="3aK-Q0-dLY"/>
@@ -231,7 +231,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="mkv-Ik-OwE" userLabel="Sign In Stack">
-                                <rect key="frame" x="81" y="384" width="252" height="32"/>
+                                <rect key="frame" x="81" y="529" width="252" height="32"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC6-rj-OIf">
                                         <rect key="frame" x="0.0" y="0.0" width="197" height="32"/>

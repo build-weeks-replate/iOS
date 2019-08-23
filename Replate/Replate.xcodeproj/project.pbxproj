@@ -21,6 +21,7 @@
 		E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */; };
 		F338681623105F5C009827E6 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338681523105F5C009827E6 /* BusinessController.swift */; };
 		F338681823105FD3009827E6 /* VolunteerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338681723105FD3009827E6 /* VolunteerController.swift */; };
+		F338681A2310782C009827E6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33868192310782C009827E6 /* Extensions.swift */; };
 		F3CA61BF230F917B002849B2 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA61BE230F917B002849B2 /* Business.swift */; };
 		F3CA61C2230F9199002849B2 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA61C1230F9199002849B2 /* Volunteer.swift */; };
 		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
@@ -45,6 +46,7 @@
 		E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDonationViewController.swift; sourceTree = "<group>"; };
 		F338681523105F5C009827E6 /* BusinessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessController.swift; sourceTree = "<group>"; };
 		F338681723105FD3009827E6 /* VolunteerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerController.swift; sourceTree = "<group>"; };
+		F33868192310782C009827E6 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		F3CA61BE230F917B002849B2 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		F3CA61C1230F9199002849B2 /* Volunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 		D8F38BD6230E396600C007F6 /* Replate */ = {
 			isa = PBXGroup;
 			children = (
+				F338681B23107831009827E6 /* Extensions */,
 				F3386814231027AB009827E6 /* Model Controllers */,
 				F3CA61C0230F9182002849B2 /* User Models */,
 				E3C90166230F0F0F009F9844 /* View Controllers */,
@@ -105,8 +108,8 @@
 				E3C9017E230F2A7B009F9844 /* EditDonationViewController.swift */,
 				E3C9017B230F2A7B009F9844 /* SignInViewController.swift */,
 				E3C9017D230F2A7B009F9844 /* SignUpOneViewController.swift */,
-				E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */,
 				E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */,
+				E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */,
 				E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */,
 			);
 			path = "View Controllers";
@@ -119,6 +122,14 @@
 				F338681723105FD3009827E6 /* VolunteerController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		F338681B23107831009827E6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F33868192310782C009827E6 /* Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F3CA61C0230F9182002849B2 /* User Models */ = {
@@ -213,6 +224,7 @@
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
 				F338681823105FD3009827E6 /* VolunteerController.swift in Sources */,
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,
+				F338681A2310782C009827E6 /* Extensions.swift in Sources */,
 				E3C90186230F2A7B009F9844 /* SignUpOneViewController.swift in Sources */,
 				F3CA61BF230F917B002849B2 /* Business.swift in Sources */,
 				E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */,

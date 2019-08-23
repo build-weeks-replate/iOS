@@ -14,7 +14,7 @@
         <scene sceneID="eye-Uk-CUH">
             <objects>
                 <viewController storyboardIdentifier="VolunteerSignUpTwo" id="45o-eP-WzG" customClass="SignUpTwoViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YAQ-1r-Rcl">
+                    <view key="view" tag="1" contentMode="scaleToFill" id="YAQ-1r-Rcl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

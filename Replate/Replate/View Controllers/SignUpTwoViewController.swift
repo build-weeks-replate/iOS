@@ -22,12 +22,12 @@ class SignUpTwoViewController: UIViewController {
     @IBOutlet weak var volunteerPasswordTextField: UITextField!
     @IBOutlet weak var volunteerConfirmPasswordTextField: UITextField!
 
+    // MARK: Outlets for Business & Volunteer
     @IBOutlet weak var nextPagePressed: UIButton!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateTextFields()
         // Do any additional setup after loading the view.
     }
     
@@ -44,23 +44,36 @@ class SignUpTwoViewController: UIViewController {
         passwordsDontMatch()
     }
     
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     
     // MARK: Unwind
     @IBAction func unwindToSignUpTwo(_ sender: UIStoryboardSegue) {
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
     
     // MARK: Helper Functions
+    func updateTextFields() {
+        if self.view.tag == 0 {
+        businessUsernameTextField.addLeftPadding(10)
+        businessEmailTextField.addLeftPadding(10)
+        businessPasswordTextField.addLeftPadding(10)
+        businessConfirmPasswordTextField.addLeftPadding(10)
+        } else {
+        volunteerUsernameTextField.addLeftPadding(10)
+        volunteerEmailTextField.addLeftPadding(10)
+        volunteerPasswordTextField.addLeftPadding(10)
+        volunteerConfirmPasswordTextField.addLeftPadding(10)
+        }
+    }
     
     func passwordsDontMatch() {
         
@@ -72,7 +85,7 @@ class SignUpTwoViewController: UIViewController {
                 alertController.addAction(defaultAction)
                 self.present(alertController, animated: true, completion: nil)
             }
-        } else if nextPagePressed.tag == 1 {
+        } else {
             if volunteerPasswordTextField.text != volunteerConfirmPasswordTextField.text {
                 let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
