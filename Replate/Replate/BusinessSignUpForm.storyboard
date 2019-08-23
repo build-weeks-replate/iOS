@@ -122,6 +122,11 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhJ-zO-jTp">
+                                <rect key="frame" x="40" y="74" width="13" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Back Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -244,6 +249,11 @@
                                     <action selector="createAccountPressed:" destination="W1b-3F-4sA" eventType="touchUpInside" id="HQ8-RO-xds"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFI-9w-QiG">
+                                <rect key="frame" x="40" y="74" width="13" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Back Button"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -283,7 +293,6 @@
         <!--Navigation Controller-->
         <scene sceneID="cOa-27-hlW">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xQF-Yt-qh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="v3y-yP-9WI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -295,11 +304,13 @@
                         <segue destination="xXB-ib-fKu" kind="relationship" relationship="rootViewController" id="yYp-03-jUt"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQF-Yt-qh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="86.956521739130437" y="107.8125"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Back Button" width="13" height="22"/>
         <image name="Text Field Background" width="335" height="45"/>
     </resources>
 </document>
