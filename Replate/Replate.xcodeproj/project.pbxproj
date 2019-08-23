@@ -78,6 +78,7 @@
 		D8F38BD6230E396600C007F6 /* Replate */ = {
 			isa = PBXGroup;
 			children = (
+				F3386814231027AB009827E6 /* Model Controllers */,
 				F3CA61C0230F9182002849B2 /* User Models */,
 				E3C90166230F0F0F009F9844 /* View Controllers */,
 				D8F38BD7230E396600C007F6 /* AppDelegate.swift */,
@@ -105,6 +106,13 @@
 				E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F3386814231027AB009827E6 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		F3CA61C0230F9182002849B2 /* User Models */ = {

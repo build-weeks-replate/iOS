@@ -21,6 +21,8 @@ struct Volunteer: Codable, Equatable {
         self.password = password
         self.email = email
         self.phone = phone
+        
+        // Setting default values for organizationName & address, to only require Username, Password, Email & Phone when creating a volunteer
         organizationName = ""
         address = ""
     }
