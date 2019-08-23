@@ -11,6 +11,11 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class DashboardCollectionViewController: UICollectionViewController {
+    
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    
+    let foodController = FoodController()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +38,13 @@ class DashboardCollectionViewController: UICollectionViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func addPressed(_ sender: Any) {
+    }
+    
+    @IBAction func settingsPressed(_ sender: Any) {
+    }
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -44,14 +55,22 @@ class DashboardCollectionViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 1
+        return foodController.foodItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodItemCollectionViewCell else { return UICollectionViewCell() }
+        
+        
+        let food = foodController.foodItems[indexPath.item]
+        cell.imageView.image = UIImage(named: "Group 5")
+        cell.titleLabel.text = food.name
+        cell.timeLabel.text = food.time
+        
+        if food.is_claimed == false {
+            cell.claimedView.isHidden = true
+        }
+
         return cell
     }
 
