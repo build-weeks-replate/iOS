@@ -9,10 +9,17 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
+    @IBOutlet weak var foodLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var descriptionTextView: UITextView!
+    @IBOutlet weak var foodImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+//        self.navigationItem.backBarButtonItem?.title = "Change"
         // Do any additional setup after loading the view.
     }
     
