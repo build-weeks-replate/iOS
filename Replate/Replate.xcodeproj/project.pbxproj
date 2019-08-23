@@ -19,6 +19,8 @@
 		E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */; };
 		E3C90189230F2A7B009F9844 /* DashboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */; };
 		E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */; };
+		F338681623105F5C009827E6 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338681523105F5C009827E6 /* BusinessController.swift */; };
+		F338681823105FD3009827E6 /* VolunteerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338681723105FD3009827E6 /* VolunteerController.swift */; };
 		F3CA61BF230F917B002849B2 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA61BE230F917B002849B2 /* Business.swift */; };
 		F3CA61C2230F9199002849B2 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CA61C1230F9199002849B2 /* Volunteer.swift */; };
 		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
@@ -41,6 +43,8 @@
 		E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewController.swift; sourceTree = "<group>"; };
 		E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDonationViewController.swift; sourceTree = "<group>"; };
+		F338681523105F5C009827E6 /* BusinessController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessController.swift; sourceTree = "<group>"; };
+		F338681723105FD3009827E6 /* VolunteerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerController.swift; sourceTree = "<group>"; };
 		F3CA61BE230F917B002849B2 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		F3CA61C1230F9199002849B2 /* Volunteer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -111,6 +115,8 @@
 		F3386814231027AB009827E6 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				F338681523105F5C009827E6 /* BusinessController.swift */,
+				F338681723105FD3009827E6 /* VolunteerController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -200,10 +206,12 @@
 				E3C90189230F2A7B009F9844 /* DashboardCollectionViewController.swift in Sources */,
 				E3C90184230F2A7B009F9844 /* SignInViewController.swift in Sources */,
 				F3CA61C2230F9199002849B2 /* Volunteer.swift in Sources */,
+				F338681623105F5C009827E6 /* BusinessController.swift in Sources */,
 				E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */,
 				E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */,
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
+				F338681823105FD3009827E6 /* VolunteerController.swift in Sources */,
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,
 				E3C90186230F2A7B009F9844 /* SignUpOneViewController.swift in Sources */,
 				F3CA61BF230F917B002849B2 /* Business.swift in Sources */,

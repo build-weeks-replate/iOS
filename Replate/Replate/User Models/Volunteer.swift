@@ -26,4 +26,13 @@ struct Volunteer: Codable, Equatable {
         organizationName = ""
         address = ""
     }
+    
+    enum CodingKeys: String, CodingKey {
+        case username
+        case password
+        case organizationName = "organization_name"
+        case address
+        case email
+        case phone
+    }
 }

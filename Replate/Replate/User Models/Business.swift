@@ -15,4 +15,13 @@ struct Business: Codable, Equatable {
     let address: String
     let email: String
     let phone: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case username
+        case password
+        case organizationName = "organization_name"
+        case address
+        case email
+        case phone
+    }
 }

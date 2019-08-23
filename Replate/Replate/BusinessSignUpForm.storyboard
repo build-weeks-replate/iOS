@@ -173,7 +173,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yW9-6J-EkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="9yK-Jw-Xhp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="997.10144927536237" y="107.8125"/>
+            <point key="canvasLocation" x="939" y="108"/>
         </scene>
         <!--SignIn-->
         <scene sceneID="wx9-Wz-4YU">
@@ -181,7 +181,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SignIn" id="xqd-mU-Ocg" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P00-Yq-epI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1499" y="214"/>
+            <point key="canvasLocation" x="1404" y="226"/>
         </scene>
         <!--Sign Up Three View Controller-->
         <scene sceneID="mFV-Mg-Cbu">
@@ -296,7 +296,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uc9-7C-Q15" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wbW-Ai-0v6" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2196" y="94"/>
+            <point key="canvasLocation" x="1865" y="89"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cOa-27-hlW">
@@ -314,7 +314,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xQF-Yt-qh4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126" y="108"/>
+            <point key="canvasLocation" x="193" y="108"/>
         </scene>
     </scenes>
     <resources>
