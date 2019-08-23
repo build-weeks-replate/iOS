@@ -15,4 +15,13 @@ struct Volunteer: Codable, Equatable {
     let address: String
     let email: String
     let phone: Int
+    
+    init(username: String, password: String, email: String, phone: Int) {
+        self.username = username
+        self.password = password
+        self.email = email
+        self.phone = phone
+        organizationName = ""
+        address = ""
+    }
 }
