@@ -19,6 +19,8 @@
 		E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */; };
 		E3C90189230F2A7B009F9844 /* DashboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */; };
 		E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */; };
+		E3E24E2B230F7F9900CD105B /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */; };
+		E3E24E2F230F8EF900CD105B /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E2E230F8EF900CD105B /* File.swift */; };
 		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
 		F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */; };
 		F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */; };
@@ -39,6 +41,8 @@
 		E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewController.swift; sourceTree = "<group>"; };
 		E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDonationViewController.swift; sourceTree = "<group>"; };
+		E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		E3E24E2E230F8EF900CD105B /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessSignUpForm.storyboard; sourceTree = "<group>"; };
 		F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VolunteerSignUpForm.storyboard; sourceTree = "<group>"; };
@@ -75,12 +79,10 @@
 			isa = PBXGroup;
 			children = (
 				E3C90166230F0F0F009F9844 /* View Controllers */,
+				E3E24E2D230F8EE300CD105B /* Models */,
+				E3E24E2C230F8C4C00CD105B /* Storyboards */,
 				D8F38BD7230E396600C007F6 /* AppDelegate.swift */,
 				D8F38BDE230E396800C007F6 /* Assets.xcassets */,
-				F3CBFD39230EE544003A7297 /* Main.storyboard */,
-				F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */,
-				F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */,
-				D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */,
 				D8F38BE3230E396800C007F6 /* Info.plist */,
 			);
 			path = Replate;
@@ -100,6 +102,26 @@
 				E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E3E24E2C230F8C4C00CD105B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBFD39230EE544003A7297 /* Main.storyboard */,
+				F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */,
+				F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */,
+				E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */,
+				D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E3E24E2D230F8EE300CD105B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3E24E2E230F8EF900CD105B /* File.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */,
+				E3E24E2B230F7F9900CD105B /* Dashboard.storyboard in Resources */,
 				F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */,
 				D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */,
 				F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */,
@@ -184,6 +207,7 @@
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,
 				E3C90186230F2A7B009F9844 /* SignUpOneViewController.swift in Sources */,
 				E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */,
+				E3E24E2F230F8EF900CD105B /* File.swift in Sources */,
 				E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
