@@ -133,7 +133,7 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-xe-zAe">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-xe-zAe">
                                 <rect key="frame" x="40" y="273" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="oJJ-TP-KF8"/>
@@ -142,7 +142,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="MMP-Dg-eWz">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="MMP-Dg-eWz">
                                 <rect key="frame" x="40" y="338" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6pl-yY-F0A"/>
@@ -184,6 +184,7 @@
                     </view>
                     <connections>
                         <outlet property="loginPasswordTextField" destination="MMP-Dg-eWz" id="q28-C4-SxM"/>
+                        <outlet property="loginShowPassword" destination="c5J-lo-n1l" id="ZBm-ad-E1d"/>
                         <outlet property="loginUsernameTextField" destination="8hQ-xe-zAe" id="oro-GU-B4T"/>
                     </connections>
                 </viewController>

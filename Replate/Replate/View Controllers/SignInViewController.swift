@@ -12,6 +12,7 @@ class SignInViewController: UIViewController {
     
     @IBOutlet weak var loginUsernameTextField: UITextField!
     @IBOutlet weak var loginPasswordTextField: UITextField!
+    @IBOutlet weak var loginShowPassword: UIButton!
     
 
     override func viewDidLoad() {
@@ -21,8 +22,13 @@ class SignInViewController: UIViewController {
     }
     
     @IBAction func showPasswordPressed(_ sender: UIButton) {
+        loginPasswordTextField.isSecureTextEntry.toggle()
+        if loginPasswordTextField.isSecureTextEntry == false {
+            sender.setTitle("HIDE", for: .normal)
+        } else {
+            sender.setTitle("SHOW", for: .normal)
+        }
     }
-    
     
     @IBAction func signInPressed(_ sender: UIButton) {
         
@@ -48,5 +54,4 @@ class SignInViewController: UIViewController {
         loginUsernameTextField.addLeftPadding(10)
         loginPasswordTextField.addLeftPadding(10)
     }
-
 }

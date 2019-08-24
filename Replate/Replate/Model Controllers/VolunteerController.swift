@@ -10,5 +10,6 @@ import Foundation
 import UIKit
 
 class VolunteerController {
+    private(set) var volunteers: [Volunteer] = []
     
 }

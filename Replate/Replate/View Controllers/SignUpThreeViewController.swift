@@ -10,6 +10,9 @@ import UIKit
 
 class SignUpThreeViewController: UIViewController {
     
+    var signUpPart1 = SignUpTwoViewController()
+    var businessController = BusinessController()
+    var businesses: [Business] = []
     // MARK: Business Sign up Outlets
     @IBOutlet weak var businessNameTextField: UITextField!
     @IBOutlet weak var businessAddressTextField: UITextField!
@@ -31,6 +34,19 @@ class SignUpThreeViewController: UIViewController {
     // MARK: Storyboard Actions
     
     @IBAction func createAccountPressed(_ sender: UIButton) {
+        guard let businessName = businessNameTextField.text,
+            let businessAddress = businessAddressTextField.text,
+            let businessCityStateZip = businessCityStateZipCodeTextField.text,
+            let businessPhone = businessPhoneNumberTextField.text,
+            let phone = Int(businessPhone) else { return }
+        
+        signUpPart1.newBusiness.organizationName = businessName
+        signUpPart1.newBusiness.address = businessAddress + businessCityStateZip
+        signUpPart1.newBusiness.phone = phone
+        
+        businesses.append(signUpPart1.newBusiness)
+        print(businesses)
+        
     }
     
 
@@ -51,12 +67,12 @@ class SignUpThreeViewController: UIViewController {
     
     func updateTextFields() {
         if self.view.tag == 0 {
-            businessNameTextField.addLeftPadding(10)
-            businessAddressTextField.addLeftPadding(10)
-            businessCityStateZipCodeTextField.addLeftPadding(10)
-            businessPhoneNumberTextField.addLeftPadding(10)
+            businessNameTextField.addLeftPadding(20)
+            businessAddressTextField.addLeftPadding(20)
+            businessCityStateZipCodeTextField.addLeftPadding(20)
+            businessPhoneNumberTextField.addLeftPadding(20)
         } else {
-            volunteerPhoneNumberTextField.addLeftPadding(10)
+            volunteerPhoneNumberTextField.addLeftPadding(20)
         }
     }
 

@@ -9,12 +9,21 @@
 import Foundation
 
 struct Business: Codable, Equatable {
-    let username: String
-    let password: String
-    let organizationName: String
-    let address: String
-    let email: String
-    let phone: Int
+    var username: String
+    var password: String
+    var organizationName: String
+    var address: String
+    var email: String
+    var phone: Int
+    
+    init(username: String, email: String, password: String ) {
+        self.username = username
+        self.email = email
+        self.password = password
+        organizationName = ""
+        address = ""
+        phone = 0
+    }
     
     enum CodingKeys: String, CodingKey {
         case username

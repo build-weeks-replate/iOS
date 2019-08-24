@@ -14,13 +14,13 @@ struct Volunteer: Codable, Equatable {
     let organizationName: String
     let address: String
     let email: String
-    let phone: Int
+    var phone: Int
     
-    init(username: String, password: String, email: String, phone: Int) {
+    init(username: String, password: String, email: String) {
         self.username = username
         self.password = password
         self.email = email
-        self.phone = phone
+        self.phone = 0
         
         // Setting default values for organizationName & address, to only require Username, Password, Email & Phone when creating a volunteer
         organizationName = ""
