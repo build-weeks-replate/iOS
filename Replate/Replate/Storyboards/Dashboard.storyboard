@@ -115,6 +115,7 @@
                             <barButtonItem systemItem="add" id="ihr-CA-Fvl">
                                 <connections>
                                     <action selector="addPressed:" destination="wR8-GZ-b4W" id="Yuq-go-cIf"/>
+                                    <segue destination="XYn-B3-lmh" kind="show" identifier="addSegue" id="WCS-1A-pON"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem title="Settings" id="zR0-LT-P2H">
@@ -132,6 +133,14 @@
             </objects>
             <point key="canvasLocation" x="167" y="166"/>
         </scene>
+        <!--AddDonation-->
+        <scene sceneID="b9D-I5-TL5">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddDonation" id="XYn-B3-lmh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="317-zk-QCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="-228"/>
+        </scene>
         <!--Detail View Controller-->
         <scene sceneID="wK1-d6-ekY">
             <objects>
@@ -144,10 +153,10 @@
                                 <rect key="frame" x="0.0" y="140" width="375" height="638"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CyW-jZ-YJy">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="665"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="415.33333333333331"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="mUz-9U-07t" userLabel="Main Stack View">
-                                                <rect key="frame" x="28" y="28" width="319" height="629"/>
+                                                <rect key="frame" x="28" y="28" width="319" height="379.33333333333331"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dvW-fq-0Im" userLabel="Name Stack View">
                                                         <rect key="frame" x="0.0" y="0.0" width="319" height="45.666666666666664"/>
@@ -236,7 +245,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vP4-Bo-Zft" userLabel="Description Stack View">
-                                                        <rect key="frame" x="0.0" y="338.66666666666669" width="319" height="80.333333333333314"/>
+                                                        <rect key="frame" x="0.0" y="338.66666666666669" width="319" height="40.666666666666686"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHx-3n-pEx">
                                                                 <rect key="frame" x="0.0" y="0.0" width="319" height="20.333333333333332"/>
@@ -244,26 +253,12 @@
                                                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="It will be donated to Bowery Mission at 227 Bowery, New York, NY 10002" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0Wl-kV-XtK">
-                                                                <rect key="frame" x="0.0" y="20.333333333333314" width="319" height="60"/>
-                                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="100" id="gQ7-aT-xhX"/>
-                                                                </constraints>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-29-2yA">
+                                                                <rect key="frame" x="0.0" y="20.333333333333314" width="319" height="20.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                                            </textView>
-                                                        </subviews>
-                                                    </stackView>
-                                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XEi-b0-82X" userLabel="Image Stack View">
-                                                        <rect key="frame" x="0.0" y="449" width="319" height="180"/>
-                                                        <subviews>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="friedchicken" translatesAutoresizingMaskIntoConstraints="NO" id="pKg-va-bCB">
-                                                                <rect key="frame" x="0.0" y="0.0" width="319" height="180"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="180" id="XYh-rA-NaY"/>
-                                                                </constraints>
-                                                            </imageView>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
                                                     </stackView>
                                                 </subviews>
@@ -327,8 +322,7 @@
                     </view>
                     <connections>
                         <outlet property="addressLabel" destination="zfH-fH-riy" id="zg5-JF-hnV"/>
-                        <outlet property="descriptionTextView" destination="0Wl-kV-XtK" id="HNQ-DZ-J10"/>
-                        <outlet property="foodImageView" destination="pKg-va-bCB" id="d8W-Fc-ibn"/>
+                        <outlet property="descriptionLabel" destination="ffj-29-2yA" id="DME-15-C5h"/>
                         <outlet property="foodLabel" destination="YGV-x3-vQ6" id="Oob-RA-Oyv"/>
                         <outlet property="phoneLabel" destination="mWz-ub-eYp" id="UFa-FX-Vc5"/>
                         <outlet property="timeLabel" destination="09Q-i6-SJZ" id="8gP-cT-E3v"/>
@@ -357,6 +351,5 @@
     </scenes>
     <resources>
         <image name="Group 5" width="166.33332824707031" height="111"/>
-        <image name="friedchicken" width="1372" height="2058"/>
     </resources>
 </document>

@@ -23,6 +23,7 @@
 		E3E24E2F230F8EF900CD105B /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E2E230F8EF900CD105B /* FoodItem.swift */; };
 		E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */; };
 		E3E24E352310226E00CD105B /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E342310226E00CD105B /* FoodController.swift */; };
+		E3E24E37231223AC00CD105B /* AddDonation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E36231223AC00CD105B /* AddDonation.storyboard */; };
 		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
 		F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */; };
 		F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */; };
@@ -47,6 +48,7 @@
 		E3E24E2E230F8EF900CD105B /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
 		E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		E3E24E342310226E00CD105B /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
+		E3E24E36231223AC00CD105B /* AddDonation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddDonation.storyboard; sourceTree = "<group>"; };
 		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessSignUpForm.storyboard; sourceTree = "<group>"; };
 		F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VolunteerSignUpForm.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 			children = (
 				F3CBFD39230EE544003A7297 /* Main.storyboard */,
 				E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */,
+				E3E24E36231223AC00CD105B /* AddDonation.storyboard */,
 				F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */,
 				F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */,
 				D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */,
@@ -206,6 +209,7 @@
 			files = (
 				F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */,
 				E3E24E2B230F7F9900CD105B /* Dashboard.storyboard in Resources */,
+				E3E24E37231223AC00CD105B /* AddDonation.storyboard in Resources */,
 				F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */,
 				D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */,
 				F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */,

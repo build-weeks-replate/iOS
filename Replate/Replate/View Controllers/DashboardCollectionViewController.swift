@@ -29,15 +29,21 @@ class DashboardCollectionViewController: UICollectionViewController {
         // Do any additional setup after loading the view.
     }
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "DetailSegue" {
+            if let detailVC = segue.destination as? DetailViewController {
+                guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
+                let item = foodController.foodItems[indexPath.item]
+                detailVC.foodItem = item
+            }
+            
+        }
     }
-    */
+ 
     
     @IBAction func addPressed(_ sender: Any) {
     }
@@ -63,7 +69,7 @@ class DashboardCollectionViewController: UICollectionViewController {
         
         
         let food = foodController.foodItems[indexPath.item]
-        cell.imageView.image = UIImage(named: "bagel")
+        cell.imageView.image = UIImage(named: "\(food.name.lowercased())")
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
         

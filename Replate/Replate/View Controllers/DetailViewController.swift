@@ -13,11 +13,18 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
-    @IBOutlet weak var descriptionTextView: UITextView!
-    @IBOutlet weak var foodImageView: UIImageView!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    var foodItem: FoodItem?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.foodLabel.text = foodItem?.name
+        self.addressLabel.text = "1234 Massachusetts Ave"
+        self.timeLabel.text = foodItem?.time
+        self.phoneLabel.text = "321-456-7891"
+        self.descriptionLabel.text = foodItem?.description
         
 //        self.navigationItem.backBarButtonItem?.title = "Change"
         // Do any additional setup after loading the view.
