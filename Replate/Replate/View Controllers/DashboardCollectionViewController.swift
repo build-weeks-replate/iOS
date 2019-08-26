@@ -18,6 +18,7 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.foodController.data()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -76,9 +77,7 @@ class DashboardCollectionViewController: UICollectionViewController {
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
         
-        if food.is_claimed == false {
-            cell.claimedView.isHidden = true
-        }
+        cell.claimedView.isHidden = !food.is_claimed
 
         return cell
     }

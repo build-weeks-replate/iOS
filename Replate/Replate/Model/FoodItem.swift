@@ -13,6 +13,6 @@ struct FoodItem {
     var name: String
     var time: String
     var description: String
-    var is_claimed: Bool
+    var is_claimed: Bool 
     let pickup_date: String
 }

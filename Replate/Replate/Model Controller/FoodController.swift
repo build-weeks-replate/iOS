@@ -11,13 +11,13 @@ import Foundation
 class FoodController {
     var foodItems: [FoodItem] = []
     
-    init() {
+    func data() {
         for i in 1...5 {
             var is_claimed = false
             
-            if i % 2 == 0 {
-                is_claimed = true
-            }
+//            if i % 2 == 0 {
+//                is_claimed = true
+//            }
             
             let foodItem = FoodItem(name: "Bagels", time: "09:00PM", description: "Donated to Bowery", is_claimed: is_claimed, pickup_date: "Aug 23")
             foodItems.append(foodItem)
@@ -39,6 +39,15 @@ class FoodController {
         foodItem.description = description
         
         // set it back
+        self.foodItems[index] = foodItem
+        return foodItem
+    }
+    
+    func claimToggle(id: String) -> FoodItem? {
+        guard let index = self.foodItems.firstIndex(where: { item in item.id == id }) else { return nil }
+
+        var foodItem = self.foodItems[index]
+        foodItem.is_claimed.toggle()
         self.foodItems[index] = foodItem
         return foodItem
     }

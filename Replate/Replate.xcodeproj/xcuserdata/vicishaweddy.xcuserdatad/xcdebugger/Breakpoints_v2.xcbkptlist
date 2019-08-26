@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Replate/View Controllers/EditDonationViewController.swift"
-            timestampString = "588486214.404976"
+            filePath = "Replate/Model Controller/FoodController.swift"
+            timestampString = "588553982.169408"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "52"
             endingLineNumber = "52"
-            landmarkName = "updatePressed(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Replate/View Controllers/EditDonationViewController.swift"
-            timestampString = "588486214.40508"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "updatePressed(_:)"
+            landmarkName = "claimToggle(id:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

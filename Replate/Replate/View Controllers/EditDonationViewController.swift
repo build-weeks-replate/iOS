@@ -54,7 +54,6 @@ class EditDonationViewController: UIViewController {
         self.delegate?.didUpdateFoodItem(item: newItem)
     }
     
-
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
