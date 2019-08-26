@@ -35,6 +35,7 @@ class DashboardCollectionViewController: UICollectionViewController {
                 guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
                 let item = foodController.foodItems[indexPath.item]
                 detailVC.foodItem = item
+                detailVC.foodController = foodController
             }
             
         }
@@ -43,7 +44,7 @@ class DashboardCollectionViewController: UICollectionViewController {
                 let addVC = nc.topViewController as? AddDonationViewController
                 addVC?.foodController = self.foodController
             }
-        }
+        } 
     }
  
     
