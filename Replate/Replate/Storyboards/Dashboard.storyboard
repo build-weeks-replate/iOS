@@ -434,6 +434,9 @@
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="40" id="fqn-yn-xlU"/>
                                                                         </constraints>
+                                                                        <connections>
+                                                                            <segue destination="svU-D2-3GL" kind="show" identifier="TimeSegue" id="O1e-O2-0vf"/>
+                                                                        </connections>
                                                                     </button>
                                                                 </subviews>
                                                             </stackView>
@@ -551,11 +554,51 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="Xkg-LY-Mkp" id="38c-E6-B0z"/>
                         <outlet property="foodTextField" destination="eUU-1T-bBL" id="kYr-HS-67x"/>
+                        <outlet property="timeLabel" destination="quJ-xc-MiB" id="bmS-Cm-1U6"/>
+                        <outlet property="todayLabel" destination="RjZ-d8-qW4" id="BGt-Cs-ZHx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb7-Tw-MHC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2004" y="907.38916256157643"/>
+        </scene>
+        <!--Set Pickup Time-->
+        <scene sceneID="CX5-5C-wTs">
+            <objects>
+                <viewController id="svU-D2-3GL" customClass="DatePickerViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9HC-uq-k7s">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="15" translatesAutoresizingMaskIntoConstraints="NO" id="NWy-re-UdZ">
+                                <rect key="frame" x="27.666666666666657" y="298" width="320" height="216"/>
+                                <date key="date" timeIntervalSinceReferenceDate="588476622.12634802">
+                                    <!--2019-08-26 01:43:42 +0000-->
+                                </date>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NWy-re-UdZ" firstAttribute="centerX" secondItem="9HC-uq-k7s" secondAttribute="centerX" id="5Zs-Uu-gI0"/>
+                            <constraint firstItem="NWy-re-UdZ" firstAttribute="centerY" secondItem="9HC-uq-k7s" secondAttribute="centerY" id="ieL-Vv-MfW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aId-to-BMF"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Set Pickup Time" id="C3O-N1-eWC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="kdk-2J-njI">
+                            <connections>
+                                <action selector="savePressed:" destination="svU-D2-3GL" id="EgP-46-Vuw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="datePicker" destination="NWy-re-UdZ" id="ikf-w8-wMo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D4L-5c-3ZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3073" y="907"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="euA-FV-9gS">

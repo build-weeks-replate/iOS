@@ -11,13 +11,15 @@ import UIKit
 class AddDonationViewController: UIViewController {
     @IBOutlet weak var foodTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextField!
-
+    @IBOutlet weak var todayLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
     var foodController: FoodController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.todayLabel.text = todaysDate()
+        
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
@@ -26,20 +28,39 @@ class AddDonationViewController: UIViewController {
     
     @IBAction func createPressed(_ sender: Any) {
         guard let foodText = foodTextField.text,
-             let descriptionText = descriptionTextField.text else { return }
+              let descriptionText = descriptionTextField.text,
+              let timeText = timeLabel.text else { return }
         
-        self.foodController?.addDonation(name: foodText, time: "10.00 PM", description: descriptionText)
+        self.foodController?.addDonation(name: foodText, time: timeText, description: descriptionText)
         self.dismiss(animated: true, completion: nil)
     }
+
+    private func todaysDate() -> String {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        let today = formatter.string(from: date)
+        return today
+    }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "TimeSegue" {
+            if let datePickerVC = segue.destination as? DatePickerViewController {
+                datePickerVC.delegate = self
+            }
+        }
     }
-    */
+}
 
+extension AddDonationViewController: DatePickerDelegate {
+    func pickupTimeChosen(time: Date) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "h:mm a"
+        let pickupTime = formatter.string(from: time).uppercased()
+        
+        self.timeLabel.text = pickupTime
+    }
 }
