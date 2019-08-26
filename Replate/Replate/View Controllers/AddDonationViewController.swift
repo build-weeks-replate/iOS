@@ -9,6 +9,10 @@
 import UIKit
 
 class AddDonationViewController: UIViewController {
+    @IBOutlet weak var foodTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextField!
+
+    var foodController: FoodController?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +20,18 @@ class AddDonationViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func cancelPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func createPressed(_ sender: Any) {
+        guard let foodText = foodTextField.text,
+             let descriptionText = descriptionTextField.text else { return }
+        
+        self.foodController?.addDonation(name: foodText, time: "10.00 PM", description: descriptionText)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

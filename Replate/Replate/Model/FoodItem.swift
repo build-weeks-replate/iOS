@@ -12,6 +12,6 @@ struct FoodItem {
     let name: String
     let time: String
     let description: String
-    let is_claimed: Bool
+    var is_claimed: Bool
     let pickup_date: String
 }

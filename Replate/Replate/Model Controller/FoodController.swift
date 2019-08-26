@@ -19,8 +19,13 @@ class FoodController {
                 is_claimed = true
             }
             
-            let foodItem = FoodItem(name: "Bagels", time: "09:00PM", description: "Donated to Bowery", is_claimed: is_claimed, pickup_date: "Aug, 23")
+            let foodItem = FoodItem(name: "Bagels", time: "09:00PM", description: "Donated to Bowery", is_claimed: is_claimed, pickup_date: "Aug 23")
             foodItems.append(foodItem)
         }
+    }
+    
+    func addDonation(name: String, time: String, description: String) {
+        let foodItem = FoodItem(name: name, time: time, description: description, is_claimed: false, pickup_date: "Aug 26")
+        foodItems.append(foodItem)
     }
 }
