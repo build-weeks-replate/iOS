@@ -12,7 +12,7 @@ class SignUpTwoViewController: UIViewController {
     
     // MARK: Properties
     var businessController = BusinessController()
-    var newBusiness: Business = Business(username: "", email: "", password: "")
+    var volunteerController = VolunteerController()
     
     // MARK: Business Sign up Outlets
     @IBOutlet weak var businessUsernameTextField: UITextField!
@@ -52,15 +52,7 @@ class SignUpTwoViewController: UIViewController {
     
     @IBAction func nextPagePressed(_ sender: UIButton) {
         passwordsDontMatch()
-        if self.view.tag == 0 {
-            //Working on creating object when pressing "next" button to complete with textFields
-            guard let username = businessUsernameTextField.text,
-                let email = businessEmailTextField.text,
-                let password = businessPasswordTextField.text else { return }
-            newBusiness.username = username
-            newBusiness.email = email
-            newBusiness.password = password
-        }
+        createUser()
     }
     
     
@@ -71,6 +63,9 @@ class SignUpTwoViewController: UIViewController {
         if segue.identifier == "BusinessSignUpPageTwo" {
             guard let businessSignUpTwoVC = segue.destination as? SignUpThreeViewController else { return }
             businessSignUpTwoVC.businessController = businessController
+        } else if segue.identifier == "VolunteerSignUpPageTwo" {
+            guard let volunteerSignUpTwoVC = segue.destination as? SignUpThreeViewController else { return }
+            volunteerSignUpTwoVC.volunteerController = volunteerController
         }
      }
     
@@ -80,6 +75,25 @@ class SignUpTwoViewController: UIViewController {
     }
     
     // MARK: Helper Functions
+    func createUser() {
+        if self.view.tag == 0 {
+            //Working on creating object when pressing "next" button to complete with textFields
+            guard let username = businessUsernameTextField.text,
+                let email = businessEmailTextField.text,
+                let password = businessPasswordTextField.text else { return }
+            businessController.business.username = username
+            businessController.business.email = email
+            businessController.business.password = password
+        } else if self.view.tag == 1 {
+            guard let username = volunteerUsernameTextField.text,
+                let email = volunteerEmailTextField.text,
+                let password = volunteerPasswordTextField.text else { return }
+            volunteerController.volunteer.username = username
+            volunteerController.volunteer.email = email
+            volunteerController.volunteer.password = password
+        }
+    }
+    
     func updateViews() {
         updateTextFields()
     }

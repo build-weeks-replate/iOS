@@ -9,11 +9,11 @@
 import Foundation
 
 struct Volunteer: Codable, Equatable {
-    let username: String
-    let password: String
+    var username: String
+    var password: String
     let organizationName: String
     let address: String
-    let email: String
+    var email: String
     var phone: Int
     
     init(username: String, password: String, email: String) {

@@ -10,8 +10,8 @@ import UIKit
 
 class SignUpThreeViewController: UIViewController {
     
-    var signUpPart1 = SignUpTwoViewController()
     var businessController = BusinessController()
+    var volunteerController = VolunteerController()
     var businesses: [Business] = []
     // MARK: Business Sign up Outlets
     @IBOutlet weak var businessNameTextField: UITextField!
@@ -34,31 +34,14 @@ class SignUpThreeViewController: UIViewController {
     // MARK: Storyboard Actions
     
     @IBAction func createAccountPressed(_ sender: UIButton) {
-        guard let businessName = businessNameTextField.text,
-            let businessAddress = businessAddressTextField.text,
-            let businessCityStateZip = businessCityStateZipCodeTextField.text,
-            let businessPhone = businessPhoneNumberTextField.text,
-            let phone = Int(businessPhone) else { return }
-        
-        signUpPart1.newBusiness.organizationName = businessName
-        signUpPart1.newBusiness.address = businessAddress + businessCityStateZip
-        signUpPart1.newBusiness.phone = phone
-        
-        businesses.append(signUpPart1.newBusiness)
-        print(businesses)
-        
+        createUser()
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+
     
     // MARK: Helper Functions
     func updateViews() {
@@ -73,6 +56,28 @@ class SignUpThreeViewController: UIViewController {
             businessPhoneNumberTextField.addLeftPadding(20)
         } else {
             volunteerPhoneNumberTextField.addLeftPadding(20)
+        }
+    }
+    
+    
+    func createUser() {
+        if self.view.tag == 0 {
+            guard let businessName = businessNameTextField.text,
+                let businessAddress = businessAddressTextField.text,
+                let businessCityStateZip = businessCityStateZipCodeTextField.text,
+                let businessPhone = businessPhoneNumberTextField.text,
+                let phone = Int(businessPhone) else { return }
+            
+            businessController.business.organizationName = businessName
+            businessController.business.address = "\(businessAddress)\n\(businessCityStateZip)"
+            businessController.business.phone = phone
+            
+            print(businessController.business)
+        } else if self.view.tag == 1 {
+            guard let volunteerPhone = volunteerPhoneNumberTextField.text,
+                let phone = Int(volunteerPhone) else { return }
+            volunteerController.volunteer.phone = phone
+            print(volunteerController.volunteer)
         }
     }
 
