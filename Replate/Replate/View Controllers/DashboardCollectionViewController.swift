@@ -17,9 +17,24 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     let foodController = FoodController()
     
+    // Telling search controller for using the same view to display the results by using nil value
+    let searchController = UISearchController(searchResultsController: nil)
+    
+    // Hold the food items that the user is searching for
+    var filteredFood = [FoodItem]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.todaysDateLabel.text = "\(todaysDate())"
+        
+        // Setup the search controller
+        // Allows the class to be informed as text changes within the UISearchBar
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search Food"
+        navigationItem.searchController = searchController
+        // Ensure the search bar does not remain on the screen if the user navigates to another view controller
+        definesPresentationContext = true
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,7 +43,25 @@ class DashboardCollectionViewController: UICollectionViewController {
     }
     
     // MARK: - Private Functions
+    
+    func searchBarIsEmpty() -> Bool {
+        // Returns true if the text is empty or nil
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    
+    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+        filteredFood = foodController.foodItems.filter({( foodItem: FoodItem) -> Bool in
+            return foodItem.name.lowercased().contains(searchText.lowercased())
+        })
+        
+        collectionView.reloadData()
+    }
 
+    // filtering results or not
+    
+    func isFiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
 
     // MARK: - Navigation
 
@@ -37,7 +70,14 @@ class DashboardCollectionViewController: UICollectionViewController {
         if segue.identifier == "DetailSegue" {
             if let detailVC = segue.destination as? DetailViewController {
                 guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
-                let item = foodController.foodItems[indexPath.item]
+                
+                let item: FoodItem
+                if isFiltering() {
+                    item = filteredFood[indexPath.item]
+                } else {
+                    item = foodController.foodItems[indexPath.item]
+                }
+                
                 detailVC.foodItem = item
                 detailVC.foodController = foodController
             }
@@ -67,15 +107,23 @@ class DashboardCollectionViewController: UICollectionViewController {
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
+        if isFiltering() {
+            return filteredFood.count
+        }
+        
         return foodController.foodItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodItemCollectionViewCell else { return UICollectionViewCell() }
         
+        let food: FoodItem
+        if isFiltering() {
+            food = filteredFood[indexPath.item]
+        } else {
+            food = foodController.foodItems[indexPath.item]
+        }
         
-        let food = foodController.foodItems[indexPath.item]
         cell.imageView.image = UIImage(named: "\(food.name.lowercased())")
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
@@ -116,4 +164,11 @@ class DashboardCollectionViewController: UICollectionViewController {
     }
     */
 
+}
+
+//extensions for responding the search bar
+extension DashboardCollectionViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }
