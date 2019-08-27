@@ -18,13 +18,14 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.foodController.data()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.collectionView.reloadData()
     }
+    
+    // MARK: - Private Functions
 
 
     // MARK: - Navigation

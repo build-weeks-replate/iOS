@@ -9,23 +9,19 @@
 import Foundation
 
 class FoodController {
-    var foodItems: [FoodItem] = []
-    
-    func data() {
-        for i in 1...5 {
-            var is_claimed = false
-            
-            if i % 2 == 0 {
-                is_claimed = true
-            }
-            
-            let foodItem = FoodItem(name: "Bagels", time: "09:00PM", description: "Donated to Bowery", is_claimed: is_claimed, pickup_date: "Aug 23")
-            foodItems.append(foodItem)
-        }
-    }
+    var foodItems: [FoodItem] = [
+        FoodItem(name: "Bagels", time: "09:00 PM", description: "Donated to Bowery.", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Pizza", time: "09:30 PM", description: "Quantity 10 boxes.", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Fried Chicken", time: "10:30 PM", description: "Call to the store before pick up time.", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Cookies", time: "06:30 PM", description: "5 boxes left", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Beef Wraps", time: "05:00 PM", description: "Drop off at Dress Up For Success organization.", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Cupcakes", time: "07:30 PM", description: "We have 20 boxes.", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Fruits", time: "07:30 PM", description: "5 platters.", is_claimed: false, pickup_date: "\(todaysDate())"),
+        FoodItem(name: "Sandwiches", time: "05:30 PM", description: "Bowery Mission requested this to be dropped off.", is_claimed: false, pickup_date: "\(todaysDate())"),
+    ]
     
     func addDonation(name: String, time: String, description: String) {
-        let foodItem = FoodItem(name: name, time: time, description: description, is_claimed: false, pickup_date: "Aug 26")
+        let foodItem = FoodItem(name: name, time: time, description: description, is_claimed: false, pickup_date: "\(todaysDate())")
         foodItems.append(foodItem)
     }
     
