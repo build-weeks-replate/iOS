@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Welcome View Controller-->
         <scene sceneID="8yc-n6-2aT">
@@ -19,25 +24,26 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="dU9-po-q7N" userLabel="Logo Phrase Stack">
-                                <rect key="frame" x="65" y="318" width="284" height="113.5"/>
+                                <rect key="frame" x="65" y="318" width="284" height="116.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="fsb-ik-cL3">
                                         <rect key="frame" x="40.5" y="0.0" width="203.5" height="78"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HELP END HUNGER IN YOUR COMMUNITY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="str-50-3Lj">
-                                        <rect key="frame" x="1" y="97" width="282" height="16.5"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <rect key="frame" x="4" y="97" width="276" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="14"/>
                                         <color key="textColor" red="0.42745098039215684" green="0.44705882352941173" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="XZc-35-Zfu" userLabel="SignUp SignIn Button Stack">
-                                <rect key="frame" x="39.5" y="470" width="335" height="119"/>
+                                <rect key="frame" x="39.5" y="473" width="335" height="119"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-sD-NhS">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
                                         <color key="backgroundColor" red="0.98431372549019602" green="0.62745098039215685" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Sign up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -47,6 +53,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="av8-OP-zjL">
                                         <rect key="frame" x="0.0" y="69" width="335" height="50"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Sign in" backgroundImage="SecondaryButton">
                                             <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -81,28 +88,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka9-vf-2hn">
-                                <rect key="frame" x="111" y="136" width="192" height="33"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome back!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Ka9-vf-2hn">
+                                <rect key="frame" x="111" y="136" width="192" height="38.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="28"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xd-fR-vzk">
-                                <rect key="frame" x="236" y="391" width="139" height="32"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <rect key="frame" x="234" y="396.5" width="141" height="36"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                 <state key="normal" title="Forgot password?">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="OWk-jl-6pl" userLabel="Sign in / Create account stack">
-                                <rect key="frame" x="40" y="492" width="325.5" height="109"/>
+                                <rect key="frame" x="40" y="501.5" width="332.5" height="113"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSB-MS-0cq">
-                                        <rect key="frame" x="0.0" y="0.0" width="325.5" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="332.5" height="50"/>
                                         <color key="backgroundColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="Rwg-fc-VkM"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -111,17 +119,17 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fCb-zl-IlA" userLabel="Create account stack">
-                                        <rect key="frame" x="0.0" y="77" width="325.5" height="32"/>
+                                        <rect key="frame" x="0.0" y="77" width="332.5" height="36"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXx-rh-sFs">
-                                                <rect key="frame" x="0.0" y="0.0" width="181.5" height="32"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="184.5" height="36"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iPV-Uf-vbf">
-                                                <rect key="frame" x="185.5" y="0.0" width="140" height="32"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                                <rect key="frame" x="188.5" y="0.0" width="144" height="36"/>
+                                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                                 <state key="normal" title="Create an account">
                                                     <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
@@ -134,26 +142,26 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-xe-zAe">
-                                <rect key="frame" x="40" y="273" width="334" height="45"/>
+                                <rect key="frame" x="40" y="278.5" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="oJJ-TP-KF8"/>
                                 </constraints>
                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="username"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="MMP-Dg-eWz">
-                                <rect key="frame" x="40" y="338" width="334" height="45"/>
+                                <rect key="frame" x="40" y="343.5" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6pl-yY-F0A"/>
                                 </constraints>
                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5J-lo-n1l">
-                                <rect key="frame" x="328" y="347.5" width="37" height="26"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <rect key="frame" x="328" y="351.5" width="36" height="29"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="12"/>
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -200,19 +208,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nwc-I2-qtb">
-                                <rect key="frame" x="111" y="136" width="192" height="33"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="28"/>
+                                <rect key="frame" x="108.5" y="136" width="197" height="38.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="28"/>
                                 <color key="textColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ath-w4-xnJ">
-                                <rect key="frame" x="135.5" y="245" width="143.5" height="47"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
+                                <rect key="frame" x="134" y="250.5" width="146" height="54.5"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="40"/>
                                 <color key="textColor" red="0.1215686275" green="0.36078431370000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wYo-IB-9L4" userLabel="Role Selection Stack">
-                                <rect key="frame" x="37" y="325" width="340" height="163"/>
+                                <rect key="frame" x="37" y="338" width="340" height="163"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKp-Nz-ekC">
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="163"/>
@@ -231,17 +239,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="mkv-Ik-OwE" userLabel="Sign In Stack">
-                                <rect key="frame" x="81" y="529" width="252" height="32"/>
+                                <rect key="frame" x="78.5" y="542" width="257.5" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eC6-rj-OIf">
-                                        <rect key="frame" x="0.0" y="0.0" width="197" height="32"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="201.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIG-5A-hDW">
-                                        <rect key="frame" x="200" y="0.0" width="52" height="32"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <rect key="frame" x="204.5" y="0.0" width="53" height="36"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>

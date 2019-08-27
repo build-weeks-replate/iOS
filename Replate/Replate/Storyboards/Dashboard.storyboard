@@ -14,7 +14,7 @@
         <!--Replate-->
         <scene sceneID="WdO-ii-qC1">
             <objects>
-                <collectionViewController id="wR8-GZ-b4W" customClass="DashboardCollectionViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="DashboardScreen" id="wR8-GZ-b4W" customClass="DashboardCollectionViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xvO-kB-VAo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -378,7 +378,8 @@
         <!--Navigation Controller-->
         <scene sceneID="ENt-wg-iiO">
             <objects>
-                <navigationController id="PZl-f1-UaK" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="76b-NH-dK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="DashboardNav" id="PZl-f1-UaK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JZ3-ZC-njd">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -387,7 +388,6 @@
                         <segue destination="wR8-GZ-b4W" kind="relationship" relationship="rootViewController" id="O8k-Sf-Q3r"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="76b-NH-dK9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-710" y="165"/>
         </scene>
