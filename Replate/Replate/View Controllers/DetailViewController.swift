@@ -15,6 +15,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var claimButton: UIButton!
+    @IBOutlet weak var infoView: UIView!
+    
     
     var foodItem: FoodItem?
     var foodController: FoodController?
@@ -42,7 +44,6 @@ class DetailViewController: UIViewController {
         }
         
         self.foodItem = self.foodController?.claimToggle(id: foodItem.id)
-        claimStatus()
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -56,6 +57,9 @@ class DetailViewController: UIViewController {
             self.claimButton.backgroundColor = UIColor(red: 249/255, green: 160/255, blue: 31/255, alpha: 1)
             self.claimButton.setTitle("Claim It", for: .normal)
         }
+        
+        self.infoView.isHidden = !foodItem.is_claimed
+        
     }
     
     // confirmation for unclaiming the donation
@@ -63,8 +67,11 @@ class DetailViewController: UIViewController {
         let alert = UIAlertController(title: "Are you sure you want to unclaim this donation?", message: "Once you unclaim it, this post will be released to other volunteers.", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Cancel", style: .destructive, handler: nil))
-        alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: nil))
-        self.present(alert,animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "Confirm", style: .default, handler: { _ in
+            self.claimStatus()
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     // MARK: - Navigation
