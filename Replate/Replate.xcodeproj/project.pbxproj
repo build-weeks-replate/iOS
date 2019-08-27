@@ -10,6 +10,11 @@
 		D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F38BD7230E396600C007F6 /* AppDelegate.swift */; };
 		D8F38BDF230E396800C007F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BDE230E396800C007F6 /* Assets.xcassets */; };
 		D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */; };
+		E3745BEA2314D36500AA3FF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BE92314D36500AA3FF0 /* Extensions.swift */; };
+		E3745BEE2314D37400AA3FF0 /* VolunteerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */; };
+		E3745BEF2314D37400AA3FF0 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BED2314D37400AA3FF0 /* BusinessController.swift */; };
+		E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF12314D38D00AA3FF0 /* Volunteer.swift */; };
+		E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF22314D38D00AA3FF0 /* Business.swift */; };
 		E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */; };
 		E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */; };
 		E3C90184230F2A7B009F9844 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017B230F2A7B009F9844 /* SignInViewController.swift */; };
@@ -40,6 +45,11 @@
 		D8F38BDE230E396800C007F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F38BE1230E396800C007F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F38BE3230E396800C007F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3745BE92314D36500AA3FF0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerController.swift; sourceTree = "<group>"; };
+		E3745BED2314D37400AA3FF0 /* BusinessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessController.swift; sourceTree = "<group>"; };
+		E3745BF12314D38D00AA3FF0 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
+		E3745BF22314D38D00AA3FF0 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpThreeViewController.swift; sourceTree = "<group>"; };
 		E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTwoViewController.swift; sourceTree = "<group>"; };
 		E3C9017B230F2A7B009F9844 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -94,10 +104,11 @@
 		D8F38BD6230E396600C007F6 /* Replate */ = {
 			isa = PBXGroup;
 			children = (
+				E3745BEB2314D37400AA3FF0 /* Model Controllers */,
+				E3745BE82314D36500AA3FF0 /* Extensions */,
 				E3E24E522314CE3700CD105B /* Resources */,
 				E3C90166230F0F0F009F9844 /* View Controllers */,
-				E3E24E332310225000CD105B /* Model Controller */,
-				E3E24E2D230F8EE300CD105B /* Model */,
+				E3E24E2D230F8EE300CD105B /* Models */,
 				E3E24E30230F929E00CD105B /* Views */,
 				E3E24E2C230F8C4C00CD105B /* Storyboards */,
 				D8F38BD7230E396600C007F6 /* AppDelegate.swift */,
@@ -105,6 +116,24 @@
 				D8F38BE3230E396800C007F6 /* Info.plist */,
 			);
 			path = Replate;
+			sourceTree = "<group>";
+		};
+		E3745BE82314D36500AA3FF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3745BE92314D36500AA3FF0 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3745BEB2314D37400AA3FF0 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3E24E342310226E00CD105B /* FoodController.swift */,
+				E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */,
+				E3745BED2314D37400AA3FF0 /* BusinessController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		E3C90166230F0F0F009F9844 /* View Controllers */ = {
@@ -136,12 +165,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		E3E24E2D230F8EE300CD105B /* Model */ = {
+		E3E24E2D230F8EE300CD105B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E3745BF12314D38D00AA3FF0 /* Volunteer.swift */,
+				E3745BF22314D38D00AA3FF0 /* Business.swift */,
 				E3E24E2E230F8EF900CD105B /* FoodItem.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E3E24E30230F929E00CD105B /* Views */ = {
@@ -150,14 +181,6 @@
 				E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		E3E24E332310225000CD105B /* Model Controller */ = {
-			isa = PBXGroup;
-			children = (
-				E3E24E342310226E00CD105B /* FoodController.swift */,
-			);
-			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 		E3E24E522314CE3700CD105B /* Resources */ = {
@@ -256,12 +279,17 @@
 				E3E24E39231371F400CD105B /* DatePickerViewController.swift in Sources */,
 				E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */,
 				E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */,
+				E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */,
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
 				E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */,
+				E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */,
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,
 				E3E24E352310226E00CD105B /* FoodController.swift in Sources */,
+				E3745BEF2314D37400AA3FF0 /* BusinessController.swift in Sources */,
+				E3745BEA2314D36500AA3FF0 /* Extensions.swift in Sources */,
 				E3C90186230F2A7B009F9844 /* SignUpOneViewController.swift in Sources */,
+				E3745BEE2314D37400AA3FF0 /* VolunteerController.swift in Sources */,
 				E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */,
 				E3E24E2F230F8EF900CD105B /* FoodItem.swift in Sources */,
 				E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */,
@@ -412,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glaslabs.Replate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -430,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glaslabs.Replate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -15,9 +15,9 @@ class FoodController {
         for i in 1...5 {
             var is_claimed = false
             
-//            if i % 2 == 0 {
-//                is_claimed = true
-//            }
+            if i % 2 == 0 {
+                is_claimed = true
+            }
             
             let foodItem = FoodItem(name: "Bagels", time: "09:00PM", description: "Donated to Bowery", is_claimed: is_claimed, pickup_date: "Aug 23")
             foodItems.append(foodItem)
