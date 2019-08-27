@@ -16,7 +16,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var claimButton: UIButton!
     @IBOutlet weak var infoView: UIView!
-    
+    @IBOutlet weak var contactLabel: UILabel!
     
     var foodItem: FoodItem?
     var foodController: FoodController?
