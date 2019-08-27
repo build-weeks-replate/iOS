@@ -356,7 +356,7 @@
                     <navigationItem key="navigationItem" title="Bagel Boss" id="X6O-Mm-tsT">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="QKd-16-Sxi">
                             <connections>
-                                <segue destination="lwp-8y-7n3" kind="show" identifier="EditSegue" id="6k8-WL-jir"/>
+                                <segue destination="ESd-Nj-LiT" kind="show" identifier="EditSegue" id="6k8-WL-jir"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -872,7 +872,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KO5-OH-5TC"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit a donation" id="acs-SO-6nP"/>
+                    <navigationItem key="navigationItem" title="Edit a donation" id="acs-SO-6nP">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="ODu-d1-NpK">
+                            <connections>
+                                <action selector="cancelPressed:" destination="lwp-8y-7n3" id="BZh-rS-eWW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="RVb-fg-VSs" id="uAy-kV-X9B"/>
                         <outlet property="dateLabel" destination="Z4a-tP-MOe" id="Hfy-uk-xiP"/>
@@ -884,7 +890,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mcx-Be-CsD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956" y="166"/>
+            <point key="canvasLocation" x="2898.4000000000001" y="165.51724137931035"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2Ia-Hz-t3i">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ESd-Nj-LiT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="WmI-iA-5xf">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lwp-8y-7n3" kind="relationship" relationship="rootViewController" id="Yre-Qm-jxK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sFR-Eq-4u9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="165.51724137931035"/>
         </scene>
     </scenes>
     <resources>

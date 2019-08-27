@@ -79,10 +79,11 @@ class DetailViewController: UIViewController {
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "EditSegue" {
-            if let editVC = segue.destination as? EditDonationViewController {
-                editVC.foodItem = self.foodItem
-                editVC.foodController = self.foodController
-                editVC.delegate = self
+            if let nc = segue.destination as? UINavigationController {
+                let editVC = nc.topViewController as? EditDonationViewController
+                editVC?.foodItem = self.foodItem
+                editVC?.foodController = self.foodController
+                editVC?.delegate = self
             }
         }
     }

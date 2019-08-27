@@ -43,6 +43,10 @@ class EditDonationViewController: UIViewController {
         return today
     }
     
+    @IBAction func cancelPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func updatePressed(_ sender: Any) {
         guard let foodText = foodTextField.text,
             let descriptionText = descriptionTextField.text,
@@ -50,7 +54,7 @@ class EditDonationViewController: UIViewController {
             let id = foodItem?.id else { return }
         
         let newItem = self.foodController?.editDonation(id: id, name: foodText, time: timeText, description: descriptionText)
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
         self.delegate?.didUpdateFoodItem(item: newItem)
     }
     
