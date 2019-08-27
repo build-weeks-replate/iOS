@@ -1,24 +1,31 @@
 //
-//  WelcomeViewController.swift
+//  DatePickerViewController.swift
 //  Replate
 //
-//  Created by Vici Shaweddy on 8/22/19.
+//  Created by Vici Shaweddy on 8/25/19.
 //  Copyright © 2019 Glas Labs. All rights reserved.
 //
 
 import UIKit
 
-class WelcomeViewController: UIViewController {
+protocol DatePickerDelegate: AnyObject {
+    func pickupTimeChosen(time: Date)
+}
 
+class DatePickerViewController: UIViewController {
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    
+    weak var delegate: DatePickerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-   
-    
-    
+    @IBAction func savePressed(_ sender: Any) {
+        self.delegate?.pickupTimeChosen(time: self.datePicker.date)
+        self.navigationController?.popViewController(animated: true)
+    }
     /*
     // MARK: - Navigation
 

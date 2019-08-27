@@ -42,7 +42,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="AG4-u6-QH0" kind="show" identifier="SignUpSegue" id="q8Y-hd-02L"/>
+                                            <segue destination="AG4-u6-QH0" kind="show" identifier="MainSignUp" id="q8Y-hd-02L"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="av8-OP-zjL">
@@ -76,7 +76,7 @@
         <!--Sign In View Controller-->
         <scene sceneID="miz-3u-sds">
             <objects>
-                <viewController id="i21-bD-fbv" customClass="SignInViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignIn" id="i21-bD-fbv" customClass="SignInViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0VZ-bu-ohD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,6 +106,9 @@
                                         <state key="normal" title="Sign in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInPressed:" destination="i21-bD-fbv" eventType="touchUpInside" id="mzE-oB-utd"/>
+                                        </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="fCb-zl-IlA" userLabel="Create account stack">
                                         <rect key="frame" x="0.0" y="77" width="325.5" height="32"/>
@@ -123,14 +126,14 @@
                                                     <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="AG4-u6-QH0" kind="show" identifier="SwitchToCreateAccountSegue" id="qxr-Vm-Neh"/>
+                                                    <segue destination="AG4-u6-QH0" kind="show" identifier="SwitchToCreateAccount" id="qxr-Vm-Neh"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-xe-zAe">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Username" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="8hQ-xe-zAe">
                                 <rect key="frame" x="40" y="273" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="oJJ-TP-KF8"/>
@@ -139,7 +142,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" textContentType="username"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="      Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="MMP-Dg-eWz">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="Text Field Background" translatesAutoresizingMaskIntoConstraints="NO" id="MMP-Dg-eWz">
                                 <rect key="frame" x="40" y="338" width="334" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="6pl-yY-F0A"/>
@@ -154,6 +157,9 @@
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showPasswordPressed:" destination="i21-bD-fbv" eventType="touchUpInside" id="zVh-NW-wTS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -176,6 +182,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FiA-oe-T2a"/>
                     </view>
+                    <connections>
+                        <outlet property="loginPasswordTextField" destination="MMP-Dg-eWz" id="q28-C4-SxM"/>
+                        <outlet property="loginUsernameTextField" destination="8hQ-xe-zAe" id="oro-GU-B4T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mz5-nf-cBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +194,7 @@
         <!--Sign Up One View Controller-->
         <scene sceneID="QmO-ZX-MmT">
             <objects>
-                <viewController id="AG4-u6-QH0" customClass="SignUpOneViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpOne" id="AG4-u6-QH0" customClass="SignUpOneViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ctB-tI-Q3K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -208,14 +218,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="160" height="163"/>
                                         <state key="normal" backgroundImage="businessOwnerButton"/>
                                         <connections>
-                                            <segue destination="bdH-TB-qW7" kind="presentation" id="ZzV-Lz-KfA"/>
+                                            <segue destination="bdH-TB-qW7" kind="show" identifier="CreateBusinessUser" id="ZzV-Lz-KfA"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2a0-VV-qN1">
                                         <rect key="frame" x="180" y="0.0" width="160" height="163"/>
                                         <state key="normal" backgroundImage="volunteerButton"/>
                                         <connections>
-                                            <segue destination="Cl3-7d-xd3" kind="show" id="3aK-Q0-dLY"/>
+                                            <segue destination="Cl3-7d-xd3" kind="show" identifier="CreateVolunteerUser" id="3aK-Q0-dLY"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -236,7 +246,7 @@
                                             <color key="titleColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="i21-bD-fbv" kind="show" identifier="SwitchToSignInSegue" id="IFC-C2-0Wg"/>
+                                            <segue destination="i21-bD-fbv" kind="show" identifier="SwitchToSignIn" id="IFC-C2-0Wg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -260,18 +270,18 @@
             </objects>
             <point key="canvasLocation" x="1778" y="-82"/>
         </scene>
-        <!--BusinessSignUpForm-->
+        <!--BusinessSignUpTwo-->
         <scene sceneID="c3g-pQ-FuY">
             <objects>
-                <viewControllerPlaceholder storyboardName="BusinessSignUpForm" id="bdH-TB-qW7" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="BusinessSignUpForm" referencedIdentifier="BusinessSignUpTwo" id="bdH-TB-qW7" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V0N-aY-N9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2317" y="-151"/>
         </scene>
-        <!--VolunteerSignUpForm-->
+        <!--VolunteerSignUpTwo-->
         <scene sceneID="ZJT-ba-DtI">
             <objects>
-                <viewControllerPlaceholder storyboardName="VolunteerSignUpForm" id="Cl3-7d-xd3" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="VolunteerSignUpForm" referencedIdentifier="VolunteerSignUpTwo" id="Cl3-7d-xd3" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yc8-Gr-ffP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2317" y="17"/>

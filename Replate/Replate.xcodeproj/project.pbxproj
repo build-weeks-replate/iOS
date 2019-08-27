@@ -10,6 +10,11 @@
 		D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F38BD7230E396600C007F6 /* AppDelegate.swift */; };
 		D8F38BDF230E396800C007F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BDE230E396800C007F6 /* Assets.xcassets */; };
 		D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */; };
+		E3745BEA2314D36500AA3FF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BE92314D36500AA3FF0 /* Extensions.swift */; };
+		E3745BEE2314D37400AA3FF0 /* VolunteerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */; };
+		E3745BEF2314D37400AA3FF0 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BED2314D37400AA3FF0 /* BusinessController.swift */; };
+		E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF12314D38D00AA3FF0 /* Volunteer.swift */; };
+		E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF22314D38D00AA3FF0 /* Business.swift */; };
 		E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */; };
 		E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */; };
 		E3C90184230F2A7B009F9844 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017B230F2A7B009F9844 /* SignInViewController.swift */; };
@@ -19,6 +24,16 @@
 		E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */; };
 		E3C90189230F2A7B009F9844 /* DashboardCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */; };
 		E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */; };
+		E3E24E2B230F7F9900CD105B /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */; };
+		E3E24E2F230F8EF900CD105B /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E2E230F8EF900CD105B /* FoodItem.swift */; };
+		E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */; };
+		E3E24E352310226E00CD105B /* FoodController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E342310226E00CD105B /* FoodController.swift */; };
+		E3E24E39231371F400CD105B /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3E24E38231371F400CD105B /* DatePickerViewController.swift */; };
+		E3E24E582314CE5A00CD105B /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E532314CE5A00CD105B /* OpenSans-ExtraBold.ttf */; };
+		E3E24E592314CE5A00CD105B /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E542314CE5A00CD105B /* OpenSans-Light.ttf */; };
+		E3E24E5A2314CE5A00CD105B /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E552314CE5A00CD105B /* OpenSans-Bold.ttf */; };
+		E3E24E5B2314CE5A00CD105B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E562314CE5A00CD105B /* OpenSans-SemiBold.ttf */; };
+		E3E24E5C2314CE5A00CD105B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E572314CE5A00CD105B /* OpenSans-Regular.ttf */; };
 		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
 		F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */; };
 		F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */; };
@@ -30,6 +45,11 @@
 		D8F38BDE230E396800C007F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F38BE1230E396800C007F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F38BE3230E396800C007F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3745BE92314D36500AA3FF0 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VolunteerController.swift; sourceTree = "<group>"; };
+		E3745BED2314D37400AA3FF0 /* BusinessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessController.swift; sourceTree = "<group>"; };
+		E3745BF12314D38D00AA3FF0 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
+		E3745BF22314D38D00AA3FF0 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpThreeViewController.swift; sourceTree = "<group>"; };
 		E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTwoViewController.swift; sourceTree = "<group>"; };
 		E3C9017B230F2A7B009F9844 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +59,16 @@
 		E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewController.swift; sourceTree = "<group>"; };
 		E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddDonationViewController.swift; sourceTree = "<group>"; };
+		E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		E3E24E2E230F8EF900CD105B /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		E3E24E342310226E00CD105B /* FoodController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodController.swift; sourceTree = "<group>"; };
+		E3E24E38231371F400CD105B /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		E3E24E532314CE5A00CD105B /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-ExtraBold.ttf"; path = "Replate/OpenSans-ExtraBold.ttf"; sourceTree = SOURCE_ROOT; };
+		E3E24E542314CE5A00CD105B /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Light.ttf"; path = "Replate/OpenSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		E3E24E552314CE5A00CD105B /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Replate/OpenSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		E3E24E562314CE5A00CD105B /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "Replate/OpenSans-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
+		E3E24E572314CE5A00CD105B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Replate/OpenSans-Regular.ttf"; sourceTree = SOURCE_ROOT; };
 		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessSignUpForm.storyboard; sourceTree = "<group>"; };
 		F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VolunteerSignUpForm.storyboard; sourceTree = "<group>"; };
@@ -74,25 +104,46 @@
 		D8F38BD6230E396600C007F6 /* Replate */ = {
 			isa = PBXGroup;
 			children = (
+				E3745BEB2314D37400AA3FF0 /* Model Controllers */,
+				E3745BE82314D36500AA3FF0 /* Extensions */,
+				E3E24E522314CE3700CD105B /* Resources */,
 				E3C90166230F0F0F009F9844 /* View Controllers */,
+				E3E24E2D230F8EE300CD105B /* Models */,
+				E3E24E30230F929E00CD105B /* Views */,
+				E3E24E2C230F8C4C00CD105B /* Storyboards */,
 				D8F38BD7230E396600C007F6 /* AppDelegate.swift */,
 				D8F38BDE230E396800C007F6 /* Assets.xcassets */,
-				F3CBFD39230EE544003A7297 /* Main.storyboard */,
-				F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */,
-				F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */,
-				D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */,
 				D8F38BE3230E396800C007F6 /* Info.plist */,
 			);
 			path = Replate;
+			sourceTree = "<group>";
+		};
+		E3745BE82314D36500AA3FF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E3745BE92314D36500AA3FF0 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E3745BEB2314D37400AA3FF0 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E3E24E342310226E00CD105B /* FoodController.swift */,
+				E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */,
+				E3745BED2314D37400AA3FF0 /* BusinessController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 		E3C90166230F0F0F009F9844 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */,
-				E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */,
-				E3C9017C230F2A7B009F9844 /* DetailViewController.swift */,
 				E3C9017E230F2A7B009F9844 /* EditDonationViewController.swift */,
+				E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */,
+				E3E24E38231371F400CD105B /* DatePickerViewController.swift */,
+				E3C9017C230F2A7B009F9844 /* DetailViewController.swift */,
 				E3C9017B230F2A7B009F9844 /* SignInViewController.swift */,
 				E3C9017D230F2A7B009F9844 /* SignUpOneViewController.swift */,
 				E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */,
@@ -100,6 +151,48 @@
 				E3C9017F230F2A7B009F9844 /* WelcomeViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		E3E24E2C230F8C4C00CD105B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F3CBFD39230EE544003A7297 /* Main.storyboard */,
+				E3E24E2A230F7F9900CD105B /* Dashboard.storyboard */,
+				F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */,
+				F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */,
+				D8F38BE0230E396800C007F6 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		E3E24E2D230F8EE300CD105B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E3745BF12314D38D00AA3FF0 /* Volunteer.swift */,
+				E3745BF22314D38D00AA3FF0 /* Business.swift */,
+				E3E24E2E230F8EF900CD105B /* FoodItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E3E24E30230F929E00CD105B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E3E24E522314CE3700CD105B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3E24E552314CE5A00CD105B /* OpenSans-Bold.ttf */,
+				E3E24E532314CE5A00CD105B /* OpenSans-ExtraBold.ttf */,
+				E3E24E542314CE5A00CD105B /* OpenSans-Light.ttf */,
+				E3E24E572314CE5A00CD105B /* OpenSans-Regular.ttf */,
+				E3E24E562314CE5A00CD105B /* OpenSans-SemiBold.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +254,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */,
+				E3E24E5C2314CE5A00CD105B /* OpenSans-Regular.ttf in Resources */,
+				E3E24E2B230F7F9900CD105B /* Dashboard.storyboard in Resources */,
+				E3E24E5B2314CE5A00CD105B /* OpenSans-SemiBold.ttf in Resources */,
+				E3E24E592314CE5A00CD105B /* OpenSans-Light.ttf in Resources */,
+				E3E24E582314CE5A00CD105B /* OpenSans-ExtraBold.ttf in Resources */,
 				F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */,
+				E3E24E5A2314CE5A00CD105B /* OpenSans-Bold.ttf in Resources */,
 				D8F38BE2230E396800C007F6 /* LaunchScreen.storyboard in Resources */,
 				F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */,
 				D8F38BDF230E396800C007F6 /* Assets.xcassets in Resources */,
@@ -177,13 +276,22 @@
 			files = (
 				E3C90189230F2A7B009F9844 /* DashboardCollectionViewController.swift in Sources */,
 				E3C90184230F2A7B009F9844 /* SignInViewController.swift in Sources */,
+				E3E24E39231371F400CD105B /* DatePickerViewController.swift in Sources */,
 				E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */,
 				E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */,
+				E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */,
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
+				E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */,
+				E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */,
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,
+				E3E24E352310226E00CD105B /* FoodController.swift in Sources */,
+				E3745BEF2314D37400AA3FF0 /* BusinessController.swift in Sources */,
+				E3745BEA2314D36500AA3FF0 /* Extensions.swift in Sources */,
 				E3C90186230F2A7B009F9844 /* SignUpOneViewController.swift in Sources */,
+				E3745BEE2314D37400AA3FF0 /* VolunteerController.swift in Sources */,
 				E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */,
+				E3E24E2F230F8EF900CD105B /* FoodItem.swift in Sources */,
 				E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,7 +431,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VL892F87QQ;
+				DEVELOPMENT_TEAM = ZYPH2NW7MY;
 				INFOPLIST_FILE = Replate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +440,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glaslabs.Replate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -341,7 +449,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VL892F87QQ;
+				DEVELOPMENT_TEAM = ZYPH2NW7MY;
 				INFOPLIST_FILE = Replate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -350,7 +458,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.glaslabs.Replate;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

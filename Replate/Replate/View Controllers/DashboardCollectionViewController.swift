@@ -11,47 +11,74 @@ import UIKit
 private let reuseIdentifier = "Cell"
 
 class DashboardCollectionViewController: UICollectionViewController {
-
+    
+    @IBOutlet weak var addButton: UIBarButtonItem!
+    
+    let foodController = FoodController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        self.foodController.data()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.collectionView.reloadData()
     }
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "DetailSegue" {
+            if let detailVC = segue.destination as? DetailViewController {
+                guard let indexPath = collectionView.indexPathsForSelectedItems?.first else { return }
+                let item = foodController.foodItems[indexPath.item]
+                detailVC.foodItem = item
+                detailVC.foodController = foodController
+            }
+            
+        }
+        else if segue.identifier == "AddSegue" {
+            if let nc = segue.destination as? UINavigationController {
+                let addVC = nc.topViewController as? AddDonationViewController
+                addVC?.foodController = self.foodController
+            }
+        } 
     }
-    */
-
+ 
+    
+    @IBAction func addPressed(_ sender: Any) {
+    }
+    
+    @IBAction func settingsPressed(_ sender: Any) {
+    }
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        return foodController.foodItems.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FoodCell", for: indexPath) as? FoodItemCollectionViewCell else { return UICollectionViewCell() }
+        
+        
+        let food = foodController.foodItems[indexPath.item]
+        cell.imageView.image = UIImage(named: "\(food.name.lowercased())")
+        cell.titleLabel.text = food.name
+        cell.timeLabel.text = food.time
+        
+        cell.claimedView.isHidden = !food.is_claimed
+
         return cell
     }
 
