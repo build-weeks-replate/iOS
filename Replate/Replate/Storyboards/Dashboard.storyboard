@@ -125,6 +125,27 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Replate" id="rIs-Xg-pe5">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="n7R-iB-17Z">
+                            <view key="customView" contentMode="scaleToFill" id="eeN-fj-FPC">
+                                <rect key="frame" x="16" y="0.0" width="83" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 27, 2019" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvQ-8H-9m6" userLabel="Today's Date">
+                                        <rect key="frame" x="0.0" y="13" width="83" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="qvQ-8H-9m6" firstAttribute="centerX" secondItem="eeN-fj-FPC" secondAttribute="centerX" id="UZa-uM-ynb"/>
+                                    <constraint firstItem="qvQ-8H-9m6" firstAttribute="centerY" secondItem="eeN-fj-FPC" secondAttribute="centerY" id="flG-vv-SeP"/>
+                                    <constraint firstItem="qvQ-8H-9m6" firstAttribute="centerY" secondItem="eeN-fj-FPC" secondAttribute="centerY" id="nkd-Pa-klO"/>
+                                    <constraint firstItem="qvQ-8H-9m6" firstAttribute="leading" secondItem="eeN-fj-FPC" secondAttribute="leading" id="yaB-70-uPh"/>
+                                </constraints>
+                            </view>
+                        </barButtonItem>
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="ihr-CA-Fvl">
                                 <connections>
@@ -141,6 +162,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="ihr-CA-Fvl" id="p7C-GQ-V0o"/>
+                        <outlet property="todaysDateLabel" destination="qvQ-8H-9m6" id="KLd-fz-Ejc"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mdm-9M-hg3" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -13,11 +13,13 @@ private let reuseIdentifier = "Cell"
 class DashboardCollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var addButton: UIBarButtonItem!
+    @IBOutlet weak var todaysDateLabel: UILabel!
     
     let foodController = FoodController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.todaysDateLabel.text = "\(todaysDate())"
     }
     
     override func viewWillAppear(_ animated: Bool) {
