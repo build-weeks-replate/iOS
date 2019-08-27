@@ -19,16 +19,12 @@ class SignUpTwoViewController: UIViewController {
     @IBOutlet weak var businessEmailTextField: UITextField!
     @IBOutlet weak var businessPasswordTextField: UITextField!
     @IBOutlet weak var businessConfirmPasswordTextField: UITextField!
-    @IBOutlet weak var businessShowPassword: UIButton!
-    @IBOutlet weak var businessShowConfirmPassword: UIButton!
     
     // MARK: Volunteer Sign Up Outlets
     @IBOutlet weak var volunteerUsernameTextField: UITextField!
     @IBOutlet weak var volunteerEmailTextField: UITextField!
     @IBOutlet weak var volunteerPasswordTextField: UITextField!
     @IBOutlet weak var volunteerConfirmPasswordTextField: UITextField!
-    @IBOutlet weak var volunteerShowPassword: UIButton!
-    @IBOutlet weak var volunteerShowConfirmPassword: UIButton!
     
     // MARK: Outlets for Business & Volunteer
     @IBOutlet weak var nextPagePressed: UIButton!

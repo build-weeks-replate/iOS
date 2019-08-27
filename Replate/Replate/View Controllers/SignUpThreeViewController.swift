@@ -69,7 +69,7 @@ class SignUpThreeViewController: UIViewController {
                 let phone = Int(businessPhone) else { return }
             
             businessController.business.organizationName = businessName
-            businessController.business.address = "\(businessAddress)\n\(businessCityStateZip)"
+            businessController.business.address = "\(businessAddress), \(businessCityStateZip)"
             businessController.business.phone = phone
             
             print(businessController.business)

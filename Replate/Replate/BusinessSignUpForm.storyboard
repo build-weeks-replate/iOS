@@ -76,14 +76,14 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftx-Vb-d9n">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ftx-Vb-d9n">
                                 <rect key="frame" x="328" y="448.5" width="37" height="26"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
                                 <state key="normal" title="SHOW">
                                     <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="showConfirmPasswordPressed:" destination="xXB-ib-fKu" eventType="touchUpInside" id="LWG-SH-Qcu"/>
+                                    <action selector="showConfirmPasswordPressed:" destination="xXB-ib-fKu" eventType="touchUpInside" id="YUg-d1-gCN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hcr-7W-buY">
@@ -167,8 +167,6 @@
                         <outlet property="businessConfirmPasswordTextField" destination="6M5-vJ-s8i" id="rPj-PZ-vS1"/>
                         <outlet property="businessEmailTextField" destination="gXH-Dm-tIC" id="Sxu-Z0-1Ez"/>
                         <outlet property="businessPasswordTextField" destination="omW-hG-PHf" id="b5B-od-jq0"/>
-                        <outlet property="businessShowConfirmPassword" destination="Ftx-Vb-d9n" id="xyb-fB-Xmm"/>
-                        <outlet property="businessShowPassword" destination="iPe-AI-cvT" id="9U7-1K-323"/>
                         <outlet property="businessUsernameTextField" destination="7wu-U9-QLI" id="p95-QT-D97"/>
                         <outlet property="nextPagePressed" destination="Hcr-7W-buY" id="IlT-rl-beh"/>
                     </connections>

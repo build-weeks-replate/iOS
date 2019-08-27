@@ -184,7 +184,6 @@
                     </view>
                     <connections>
                         <outlet property="loginPasswordTextField" destination="MMP-Dg-eWz" id="q28-C4-SxM"/>
-                        <outlet property="loginShowPassword" destination="c5J-lo-n1l" id="ZBm-ad-E1d"/>
                         <outlet property="loginUsernameTextField" destination="8hQ-xe-zAe" id="oro-GU-B4T"/>
                     </connections>
                 </viewController>

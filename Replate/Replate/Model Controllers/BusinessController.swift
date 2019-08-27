@@ -29,10 +29,6 @@ class BusinessController {
         
         businesses.append(business)
         print(business)
-    }
-    
-    
-    
-    
+    }  
 }
 
