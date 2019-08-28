@@ -25,8 +25,9 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.todaysDateLabel.text = "\(todaysDate())"
         
+        self.todaysDateLabel.text = Date().dateString().uppercased()
+
         // Setup the search controller
         // Allows the class to be informed as text changes within the UISearchBar
         searchController.searchResultsUpdater = self
@@ -40,6 +41,9 @@ class DashboardCollectionViewController: UICollectionViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.collectionView.reloadData()
+        // removing the line
+        self.navigationController?.navigationBar.shouldRemoveShadow(true)
+
     }
     
     // MARK: - Private Functions
@@ -170,5 +174,15 @@ class DashboardCollectionViewController: UICollectionViewController {
 extension DashboardCollectionViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         filterContentForSearchText(searchController.searchBar.text!)
+    }
+}
+
+extension UINavigationBar {
+    func shouldRemoveShadow(_ value: Bool) -> Void {
+        if value {
+            self.setValue(true, forKey: "hidesShadow")
+        } else {
+            self.setValue(false, forKey: "hidesShadow")
+        }
     }
 }

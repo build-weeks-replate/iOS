@@ -18,8 +18,7 @@ class AddDonationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.todayLabel.text = todaysDate()
-        
+        self.todayLabel.text = Date().dateString()
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
@@ -33,14 +32,6 @@ class AddDonationViewController: UIViewController {
         
         self.foodController?.addDonation(name: foodText, time: timeText, description: descriptionText)
         self.dismiss(animated: true, completion: nil)
-    }
-
-    private func todaysDate() -> String {
-        let date = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d, yyyy"
-        let today = formatter.string(from: date)
-        return today
     }
     
     // MARK: - Navigation

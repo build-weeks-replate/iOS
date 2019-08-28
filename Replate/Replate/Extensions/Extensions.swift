@@ -16,3 +16,14 @@ extension UITextField {
         self.leftViewMode = .always
     }
 }
+
+extension Date {
+    // instance func
+    func dateString() -> String {
+        let date = self
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMM d, yyyy"
+        let today = formatter.string(from: date)
+        return today
+    }
+}

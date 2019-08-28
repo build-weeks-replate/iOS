@@ -29,18 +29,10 @@ class EditDonationViewController: UIViewController {
 
         self.foodTextField.text = foodItem?.name
         self.descriptionTextField.text = foodItem?.description
-        self.dateLabel.text = todaysDate()
+        self.dateLabel.text = Date().dateString()
         self.timeLabel.text = foodItem?.time
         self.addressLabel.text = "1234 Massachusetts Ave"
         self.phoneLabel.text = "321-456-7891"
-    }
-    
-    private func todaysDate() -> String {
-        let date = Date()
-        let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d, yyyy"
-        let today = formatter.string(from: date)
-        return today
     }
     
     @IBAction func cancelPressed(_ sender: Any) {

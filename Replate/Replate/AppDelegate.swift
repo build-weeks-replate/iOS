@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UINavigationBar.appearance().barTintColor = .white
+        
+        // Custom Font for Navigation Title
+        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 249/255, green: 160/255, blue: 31/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "OpenSans-ExtraBold", size: 30)!]
+        
+        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 249/255, green: 160/255, blue: 31/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "OpenSans-ExtraBold", size: 17)!]
+
+
         return true
     }
 
