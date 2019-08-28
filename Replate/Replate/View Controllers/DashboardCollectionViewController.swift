@@ -16,6 +16,7 @@ class DashboardCollectionViewController: UICollectionViewController {
     @IBOutlet weak var todaysDateLabel: UILabel!
     
     let foodController = FoodController()
+    let userType: UserType = .business
     
     // Telling search controller for using the same view to display the results by using nil value
     let searchController = UISearchController(searchResultsController: nil)
@@ -27,15 +28,23 @@ class DashboardCollectionViewController: UICollectionViewController {
         super.viewDidLoad()
         
         self.todaysDateLabel.text = Date().dateString().uppercased()
+        
+        // User Type Dashboard
+        switch userType {
+        case .business:
+            print("Business")
 
-        // Setup the search controller
-        // Allows the class to be informed as text changes within the UISearchBar
-        searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search Food"
-        navigationItem.searchController = searchController
-        // Ensure the search bar does not remain on the screen if the user navigates to another view controller
-        definesPresentationContext = true
+        case .volunteer:
+            navigationItem.rightBarButtonItems?.removeFirst()
+            // Setup the search controller
+            // Allows the class to be informed as text changes within the UISearchBar
+            searchController.searchResultsUpdater = self
+            searchController.obscuresBackgroundDuringPresentation = false
+            searchController.searchBar.placeholder = "Search Food"
+            navigationItem.searchController = searchController
+            // Ensure the search bar does not remain on the screen if the user navigates to another view controller
+            definesPresentationContext = true
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {

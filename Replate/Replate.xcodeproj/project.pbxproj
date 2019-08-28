@@ -15,6 +15,7 @@
 		E3745BEF2314D37400AA3FF0 /* BusinessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BED2314D37400AA3FF0 /* BusinessController.swift */; };
 		E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF12314D38D00AA3FF0 /* Volunteer.swift */; };
 		E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF22314D38D00AA3FF0 /* Business.swift */; };
+		E3745BF92317142100AA3FF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF82317142100AA3FF0 /* User.swift */; };
 		E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */; };
 		E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */; };
 		E3C90184230F2A7B009F9844 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017B230F2A7B009F9844 /* SignInViewController.swift */; };
@@ -50,6 +51,7 @@
 		E3745BED2314D37400AA3FF0 /* BusinessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessController.swift; sourceTree = "<group>"; };
 		E3745BF12314D38D00AA3FF0 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		E3745BF22314D38D00AA3FF0 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		E3745BF82317142100AA3FF0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpThreeViewController.swift; sourceTree = "<group>"; };
 		E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTwoViewController.swift; sourceTree = "<group>"; };
 		E3C9017B230F2A7B009F9844 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				E3745BF12314D38D00AA3FF0 /* Volunteer.swift */,
 				E3745BF22314D38D00AA3FF0 /* Business.swift */,
 				E3E24E2E230F8EF900CD105B /* FoodItem.swift */,
+				E3745BF82317142100AA3FF0 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */,
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
+				E3745BF92317142100AA3FF0 /* User.swift in Sources */,
 				E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */,
 				E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */,
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,

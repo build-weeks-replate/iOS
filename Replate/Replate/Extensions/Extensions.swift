@@ -18,7 +18,7 @@ extension UITextField {
 }
 
 extension Date {
-    // instance func
+    // instance function
     func dateString() -> String {
         let date = self
         let formatter = DateFormatter()
