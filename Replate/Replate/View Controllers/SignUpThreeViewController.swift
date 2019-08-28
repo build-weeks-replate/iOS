@@ -47,22 +47,6 @@ class SignUpThreeViewController: UIViewController {
 
     
     // MARK: Helper Functions
-    func updateViews() {
-        updateTextFields()
-    }
-    
-    func updateTextFields() {
-        if self.view.tag == 0 {
-            businessNameTextField.addLeftPadding(20)
-            businessAddressTextField.addLeftPadding(20)
-            businessCityStateZipCodeTextField.addLeftPadding(20)
-            businessPhoneNumberTextField.addLeftPadding(20)
-        } else {
-            volunteerPhoneNumberTextField.addLeftPadding(20)
-        }
-    }
-    
-    
     func createUser() {
         if self.view.tag == 0 {
             guard let businessName = businessNameTextField.text,
@@ -81,6 +65,23 @@ class SignUpThreeViewController: UIViewController {
                 let phone = Int(volunteerPhone) else { return }
             volunteerController.volunteer.phone = phone
             print(volunteerController.volunteer)
+        }
+    }
+    
+    // MARK: UI
+    
+    func updateViews() {
+        updateTextFields()
+    }
+    
+    func updateTextFields() {
+        if self.view.tag == 0 {
+            businessNameTextField.addLeftPadding(20)
+            businessAddressTextField.addLeftPadding(20)
+            businessCityStateZipCodeTextField.addLeftPadding(20)
+            businessPhoneNumberTextField.addLeftPadding(20)
+        } else {
+            volunteerPhoneNumberTextField.addLeftPadding(20)
         }
     }
 

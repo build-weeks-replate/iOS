@@ -95,6 +95,28 @@ class SignUpTwoViewController: UIViewController {
         }
     }
     
+    func passwordsDontMatch() {
+        if nextPagePressed.tag == 0 {
+            if businessPasswordTextField.text != businessConfirmPasswordTextField.text {
+                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        } else {
+            if volunteerPasswordTextField.text != volunteerConfirmPasswordTextField.text {
+                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    // MARK: UI
+    
     func updateViews() {
         updateTextFields()
     }
@@ -150,23 +172,4 @@ class SignUpTwoViewController: UIViewController {
         }
     }
     
-    func passwordsDontMatch() {
-        if nextPagePressed.tag == 0 {
-            if businessPasswordTextField.text != businessConfirmPasswordTextField.text {
-                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-        } else {
-            if volunteerPasswordTextField.text != volunteerConfirmPasswordTextField.text {
-                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
-    }
 }
