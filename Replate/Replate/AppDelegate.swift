@@ -23,7 +23,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(red: 249/255, green: 160/255, blue: 31/255, alpha: 1), NSAttributedString.Key.font: UIFont(name: "OpenSans-ExtraBold", size: 17)!]
 
-
         return true
     }
 

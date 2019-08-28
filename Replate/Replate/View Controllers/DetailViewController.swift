@@ -51,11 +51,11 @@ class DetailViewController: UIViewController {
     private func claimStatus() {
         guard let foodItem = self.foodItem else { return }
         if foodItem.is_claimed {
-            self.claimButton.backgroundColor = .gray
-            self.claimButton.setTitle("Claimed", for: .normal)
+            self.claimButton.backgroundColor = UIColor(red: 32/255, green: 92/255, blue: 112/255, alpha: 1)
+            self.claimButton.setTitle("Unclaimed Donation", for: .normal)
         } else {
             self.claimButton.backgroundColor = UIColor(red: 249/255, green: 160/255, blue: 31/255, alpha: 1)
-            self.claimButton.setTitle("Claim It", for: .normal)
+            self.claimButton.setTitle("Claim Donation", for: .normal)
         }
         
         self.infoView.isHidden = !foodItem.is_claimed
