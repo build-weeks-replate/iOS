@@ -58,16 +58,16 @@
                                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-ao-5gS" userLabel="Labels">
-                                                    <rect key="frame" x="47.666666666666657" y="74" width="66" height="52"/>
+                                                    <rect key="frame" x="47.666666666666657" y="75.333333333333329" width="66" height="49.333333333333329"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagels" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-2C-QfZ">
-                                                            <rect key="frame" x="1.3333333333333357" y="0.0" width="63.000000000000007" height="27.333333333333332"/>
-                                                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="20"/>
+                                                            <rect key="frame" x="4.6666666666666679" y="0.0" width="56.666666666666657" height="24.666666666666668"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-SY-Hyb">
-                                                            <rect key="frame" x="0.0" y="31.333333333333329" width="66" height="20.666666666666671"/>
+                                                            <rect key="frame" x="0.0" y="28.666666666666671" width="66" height="20.666666666666671"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -348,7 +348,7 @@
                                                                 <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-29-2yA">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffj-29-2yA">
                                                                 <rect key="frame" x="0.0" y="20.666666666666629" width="319" height="23.333333333333329"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
                                                                 <nil key="textColor"/>
@@ -468,9 +468,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oNq-B0-zSO">
-                                <rect key="frame" x="0.0" y="140" width="375" height="638"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="578"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNT-4f-JRd">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GNT-4f-JRd" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="475"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qa5-kJ-kda" userLabel="Main Stack View">
@@ -492,7 +492,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -597,7 +597,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -619,7 +619,7 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="GNT-4f-JRd" secondAttribute="bottom" id="MAV-49-pIa"/>
-                                    <constraint firstItem="GNT-4f-JRd" firstAttribute="top" secondItem="oNq-B0-zSO" secondAttribute="top" id="ZI6-6L-1eJ"/>
+                                    <constraint firstItem="GNT-4f-JRd" firstAttribute="top" secondItem="oNq-B0-zSO" secondAttribute="top" id="htG-Pg-Rmp"/>
                                     <constraint firstItem="GNT-4f-JRd" firstAttribute="leading" secondItem="oNq-B0-zSO" secondAttribute="leading" id="t2y-GP-hjd"/>
                                     <constraint firstAttribute="trailing" secondItem="GNT-4f-JRd" secondAttribute="trailing" id="u4Q-wP-YEo"/>
                                 </constraints>
@@ -630,7 +630,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3l-rJ-RGA">
                                         <rect key="frame" x="25" y="10" width="325" height="40"/>
                                         <color key="backgroundColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Create Donation">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -651,10 +651,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="GNT-4f-JRd" firstAttribute="width" secondItem="RVp-C3-cFW" secondAttribute="width" id="0nq-dI-2qc"/>
-                            <constraint firstItem="GNT-4f-JRd" firstAttribute="height" secondItem="RVp-C3-cFW" secondAttribute="height" priority="250" id="531-9L-Jsn"/>
+                            <constraint firstItem="GNT-4f-JRd" firstAttribute="width" secondItem="oNq-B0-zSO" secondAttribute="width" id="0nq-dI-2qc"/>
+                            <constraint firstItem="GNT-4f-JRd" firstAttribute="height" secondItem="oNq-B0-zSO" secondAttribute="height" priority="250" id="531-9L-Jsn"/>
                             <constraint firstItem="dTO-pl-v6h" firstAttribute="trailing" secondItem="apf-Wz-yZ3" secondAttribute="trailing" id="BQI-hZ-zAe"/>
-                            <constraint firstItem="apf-Wz-yZ3" firstAttribute="bottom" secondItem="oNq-B0-zSO" secondAttribute="bottom" id="ByO-9H-fOi"/>
+                            <constraint firstItem="apf-Wz-yZ3" firstAttribute="bottom" secondItem="oNq-B0-zSO" secondAttribute="bottom" constant="60" id="ByO-9H-fOi"/>
                             <constraint firstItem="dTO-pl-v6h" firstAttribute="leading" secondItem="apf-Wz-yZ3" secondAttribute="leading" id="Noq-Mg-K6k"/>
                             <constraint firstItem="apf-Wz-yZ3" firstAttribute="trailing" secondItem="oNq-B0-zSO" secondAttribute="trailing" id="dtJ-Ce-78U"/>
                             <constraint firstItem="oNq-B0-zSO" firstAttribute="leading" secondItem="apf-Wz-yZ3" secondAttribute="leading" id="hkX-aC-Fog"/>

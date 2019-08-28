@@ -27,6 +27,7 @@ class AddDonationViewController: UIViewController {
     
     @IBAction func createPressed(_ sender: Any) {
         guard let foodText = foodTextField.text,
+              !foodText.isEmpty,
               let descriptionText = descriptionTextField.text,
               let timeText = timeLabel.text else { return }
         
