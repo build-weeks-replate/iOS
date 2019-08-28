@@ -16,7 +16,7 @@ class DashboardCollectionViewController: UICollectionViewController {
     @IBOutlet weak var todaysDateLabel: UILabel!
     
     let foodController = FoodController()
-    let userType: UserType = .business
+    let userType: UserType = .volunteer
     
     // Telling search controller for using the same view to display the results by using nil value
     let searchController = UISearchController(searchResultsController: nil)
@@ -40,7 +40,7 @@ class DashboardCollectionViewController: UICollectionViewController {
             // Allows the class to be informed as text changes within the UISearchBar
             searchController.searchResultsUpdater = self
             searchController.obscuresBackgroundDuringPresentation = false
-            searchController.searchBar.placeholder = "Search Food"
+            searchController.searchBar.placeholder = "Search Food or Business"
             navigationItem.searchController = searchController
             // Ensure the search bar does not remain on the screen if the user navigates to another view controller
             definesPresentationContext = true
@@ -64,14 +64,14 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     func filterContentForSearchText(_ searchText: String, scope: String = "All") {
         filteredFood = foodController.foodItems.filter({( foodItem: FoodItem) -> Bool in
-            return foodItem.name.lowercased().contains(searchText.lowercased())
+            return foodItem.name.lowercased().contains(searchText.lowercased()) ||
+                foodItem.business?.lowercased().contains(searchText.lowercased()) == true
         })
         
         collectionView.reloadData()
     }
 
-    // filtering results or not
-    
+    // Filtering results or not
     func isFiltering() -> Bool {
         return searchController.isActive && !searchBarIsEmpty()
     }
@@ -140,6 +140,7 @@ class DashboardCollectionViewController: UICollectionViewController {
         cell.imageView.image = UIImage(named: "\(food.name.lowercased())")
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
+        cell.businessLabel.text = food.business
         
         cell.claimedView.isHidden = !food.is_claimed
 

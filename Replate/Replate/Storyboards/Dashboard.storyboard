@@ -58,16 +58,22 @@
                                                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-ao-5gS" userLabel="Labels">
-                                                    <rect key="frame" x="47.666666666666657" y="75.333333333333329" width="66" height="49.333333333333329"/>
+                                                    <rect key="frame" x="0.0" y="61.666666666666664" width="161" height="76.666666666666686"/>
                                                     <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ODn-AJ-yj9">
+                                                            <rect key="frame" x="59.333333333333343" y="0.0" width="42.666666666666657" height="23.333333333333332"/>
+                                                            <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bagels" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Bg-2C-QfZ">
-                                                            <rect key="frame" x="4.6666666666666679" y="0.0" width="56.666666666666657" height="24.666666666666668"/>
+                                                            <rect key="frame" x="52.333333333333343" y="27.333333333333336" width="56.666666666666657" height="24.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="18"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:00 PM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHw-SY-Hyb">
-                                                            <rect key="frame" x="0.0" y="28.666666666666671" width="66" height="20.666666666666671"/>
+                                                            <rect key="frame" x="47.666666666666657" y="56.000000000000007" width="66" height="20.666666666666664"/>
                                                             <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -84,6 +90,7 @@
                                                 <constraint firstItem="nuY-np-Xlz" firstAttribute="leading" secondItem="ctc-93-Qp9" secondAttribute="leading" id="AnW-VB-9o8"/>
                                                 <constraint firstItem="nuY-np-Xlz" firstAttribute="top" secondItem="ctc-93-Qp9" secondAttribute="top" id="N9O-nC-Cnc"/>
                                                 <constraint firstAttribute="bottom" secondItem="eMr-Jc-10M" secondAttribute="bottom" id="TEn-qY-yxx"/>
+                                                <constraint firstItem="aFN-ao-5gS" firstAttribute="width" secondItem="ctc-93-Qp9" secondAttribute="width" id="YoM-jn-Xtv"/>
                                                 <constraint firstItem="eMr-Jc-10M" firstAttribute="top" secondItem="ctc-93-Qp9" secondAttribute="top" id="l3P-mZ-GvY"/>
                                                 <constraint firstAttribute="trailing" secondItem="eMr-Jc-10M" secondAttribute="trailing" id="pe0-ed-AH3"/>
                                                 <constraint firstAttribute="trailing" secondItem="nuY-np-Xlz" secondAttribute="trailing" id="zQG-oJ-Z4Q"/>
@@ -125,6 +132,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <outlet property="businessLabel" destination="ODn-AJ-yj9" id="w4j-pT-vcq"/>
                                     <outlet property="claimedView" destination="pYo-0m-fma" id="PTw-oc-4O5"/>
                                     <outlet property="imageView" destination="eMr-Jc-10M" id="Xxz-YA-FOH"/>
                                     <outlet property="timeLabel" destination="wHw-SY-Hyb" id="DVW-uG-AkT"/>

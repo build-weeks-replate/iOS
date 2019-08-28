@@ -10,14 +10,14 @@ import Foundation
 
 class FoodController {
     var foodItems: [FoodItem] = [
-        FoodItem(name: "Bagels", time: "09:00 PM", description: "Donated to Bowery.", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Pizza", time: "09:30 PM", description: "Quantity 10 boxes.", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Fried Chicken", time: "10:30 PM", description: "Call to the store before pick up time.", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Cookies", time: "06:30 PM", description: "5 boxes left", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Beef Wraps", time: "05:00 PM", description: "Drop off at Dress Up For Success organization.", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Cupcakes", time: "07:30 PM", description: "We have 20 boxes.", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Fruits", time: "07:30 PM", description: "5 platters.", is_claimed: false, pickup_date: "\(Date().dateString())"),
-        FoodItem(name: "Sandwiches", time: "05:30 PM", description: "Bowery Mission requested this to be dropped off.", is_claimed: false, pickup_date: "\(Date().dateString())"),
+        FoodItem(name: "Bagels", time: "09:00 PM", description: "Donated to Bowery.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Tompskin Square Bagel"),
+        FoodItem(name: "Pizza", time: "09:30 PM", description: "Quantity 10 boxes.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Sauce Pizza"),
+        FoodItem(name: "Fried Chicken", time: "10:30 PM", description: "Call to the store before pick up time.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Popeye's"),
+        FoodItem(name: "Cookies", time: "06:30 PM", description: "5 boxes left", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Tompskin Square Bagel"),
+        FoodItem(name: "Beef Wraps", time: "05:00 PM", description: "Drop off at Dress Up For Success organization.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Best Price Deli"),
+        FoodItem(name: "Cupcakes", time: "07:30 PM", description: "We have 20 boxes.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Baked by Melissa"),
+        FoodItem(name: "Fruits", time: "07:30 PM", description: "5 platters.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Best Price Deli"),
+        FoodItem(name: "Sandwiches", time: "05:30 PM", description: "Bowery Mission requested this to be dropped off.", is_claimed: false, pickup_date: "\(Date().dateString())", business: "Best Price Deli"),
     ]
     
     func addDonation(name: String, time: String, description: String) {

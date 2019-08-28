@@ -32,7 +32,7 @@ class DetailViewController: UIViewController {
         self.timeLabel.text = foodItem?.time
         self.phoneLabel.text = "321-456-7891"
         self.descriptionLabel.text = foodItem?.description
-        self.navigationItem.title = "Tompskin Bagel"
+        self.navigationItem.title = foodItem?.business
         claimStatus()
     }
     

@@ -8,11 +8,27 @@
 
 import Foundation
 
-struct FoodItem {
+struct FoodItem: Codable, Equatable {
     let id: String = UUID().uuidString
     var name: String
     var time: String
     var description: String
     var is_claimed: Bool 
     let pickup_date: String
+    
+    // temporary until we have the API
+    var business: String?
+    
+    init(name: String, time: String, description: String, is_claimed: Bool, pickup_date: String, business: String? = "") {
+        self.name = name
+        self.time = time
+        self.description = description
+        self.pickup_date = pickup_date
+        self.is_claimed = false
+        self.business = business
+    }
+    
+    enum CodingKeys: String, CodingKey {
+        case id, name, time, description, is_claimed, pickup_date, business
+    }
 }
