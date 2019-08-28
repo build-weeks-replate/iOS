@@ -18,7 +18,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="8yc-n6-2aT">
             <objects>
-                <viewController id="MOj-q0-ate" customClass="WelcomeViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="MOj-q0-ate" customClass="WelcomeViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vwk-KO-DZz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

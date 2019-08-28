@@ -34,6 +34,7 @@
 		E3E24E5A2314CE5A00CD105B /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E552314CE5A00CD105B /* OpenSans-Bold.ttf */; };
 		E3E24E5B2314CE5A00CD105B /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E562314CE5A00CD105B /* OpenSans-SemiBold.ttf */; };
 		E3E24E5C2314CE5A00CD105B /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E3E24E572314CE5A00CD105B /* OpenSans-Regular.ttf */; };
+		F31DFF122316253A00124C1E /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F31DFF112316253A00124C1E /* PopUp.swift */; };
 		F3CBFD3A230EE544003A7297 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD39230EE544003A7297 /* Main.storyboard */; };
 		F3CBFD3C230EFC2A003A7297 /* BusinessSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */; };
 		F3CBFD3E230F0584003A7297 /* VolunteerSignUpForm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */; };
@@ -69,6 +70,7 @@
 		E3E24E552314CE5A00CD105B /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Bold.ttf"; path = "Replate/OpenSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
 		E3E24E562314CE5A00CD105B /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-SemiBold.ttf"; path = "Replate/OpenSans-SemiBold.ttf"; sourceTree = SOURCE_ROOT; };
 		E3E24E572314CE5A00CD105B /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-Regular.ttf"; path = "Replate/OpenSans-Regular.ttf"; sourceTree = SOURCE_ROOT; };
+		F31DFF112316253A00124C1E /* PopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		F3CBFD39230EE544003A7297 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F3CBFD3B230EFC2A003A7297 /* BusinessSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BusinessSignUpForm.storyboard; sourceTree = "<group>"; };
 		F3CBFD3D230F0584003A7297 /* VolunteerSignUpForm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VolunteerSignUpForm.storyboard; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E3E24E3123101EA600CD105B /* FoodItemCollectionViewCell.swift */,
+				F31DFF112316253A00124C1E /* PopUp.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				E3C9018A230F2A7B009F9844 /* AddDonationViewController.swift in Sources */,
 				E3C90188230F2A7B009F9844 /* WelcomeViewController.swift in Sources */,
 				E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */,
+				F31DFF122316253A00124C1E /* PopUp.swift in Sources */,
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
 				E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */,

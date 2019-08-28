@@ -81,6 +81,10 @@ class DashboardCollectionViewController: UICollectionViewController {
 
         return cell
     }
+    
+    @IBAction func unwindToDashboard(_ sender: UIStoryboardSegue) {
+    }
+    
 
     // MARK: UICollectionViewDelegate
 
