@@ -51,6 +51,11 @@ class SignUpTwoViewController: UIViewController {
         createUser()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
     
      // MARK: - Navigation
      
@@ -100,6 +105,7 @@ class SignUpTwoViewController: UIViewController {
             businessEmailTextField.addLeftPadding(20)
             businessPasswordTextField.addLeftPadding(20)
             businessConfirmPasswordTextField.addLeftPadding(20)
+            
         } else {
             volunteerUsernameTextField.addLeftPadding(20)
             volunteerEmailTextField.addLeftPadding(20)
