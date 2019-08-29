@@ -116,6 +116,7 @@
                                         </state>
                                         <connections>
                                             <action selector="signInPressed:" destination="i21-bD-fbv" eventType="touchUpInside" id="mzE-oB-utd"/>
+                                            <segue destination="sN8-sN-FL5" kind="show" id="bwg-T9-c4E"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -202,6 +203,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mz5-nf-cBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="900.00000000000011" y="737.94642857142856"/>
+        </scene>
+        <!--DashboardNav-->
+        <scene sceneID="QWb-mA-hg4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" referencedIdentifier="DashboardNav" id="sN8-sN-FL5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="31w-4f-XPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1447" y="795"/>
         </scene>
         <!--Sign Up One View Controller-->
         <scene sceneID="QmO-ZX-MmT">
