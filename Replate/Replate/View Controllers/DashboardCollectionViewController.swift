@@ -149,7 +149,7 @@ class DashboardCollectionViewController: UICollectionViewController {
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
         cell.businessLabel.text = food.organization_name
-        
+        cell.businessLabel.isHidden = UserManager.shared.userType == .business
         cell.claimedView.isHidden = !food.is_claimed
 
         return cell

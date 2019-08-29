@@ -30,7 +30,6 @@ class DetailViewController: UIViewController {
         switch userManager.userType {
         case .business:
             self.claimButton.isHidden = true
-            
         case .volunteer:
             navigationItem.rightBarButtonItems?.removeFirst()
         }
@@ -63,6 +62,7 @@ class DetailViewController: UIViewController {
         if foodItem.is_claimed {
             self.claimButton.backgroundColor = UIColor(red: 32/255, green: 92/255, blue: 112/255, alpha: 1)
             self.claimButton.setTitle("Unclaimed Donation", for: .normal)
+            navigationItem.rightBarButtonItems?.removeFirst()
         } else {
             self.claimButton.backgroundColor = UIColor(red: 249/255, green: 160/255, blue: 31/255, alpha: 1)
             self.claimButton.setTitle("Claim Donation", for: .normal)

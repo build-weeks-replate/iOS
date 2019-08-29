@@ -24,7 +24,7 @@ struct FoodItem: Codable, Equatable {
         self.time = time
         self.description = description
         self.pickup_date = pickup_date
-        self.is_claimed = false
+        self.is_claimed = is_claimed
         self.organization_name = organization_name
     }
     
