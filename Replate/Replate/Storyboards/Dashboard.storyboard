@@ -180,6 +180,7 @@
                                 <color key="tintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="settingsPressed:" destination="wR8-GZ-b4W" id="kfe-Cf-vie"/>
+                                    <segue destination="SNH-OV-TOK" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="wks-1O-tnw"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -456,7 +457,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ENt-wg-iiO">
             <objects>
-                <navigationController id="PZl-f1-UaK" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="DashboardNav" id="PZl-f1-UaK" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="JZ3-ZC-njd">
                         <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

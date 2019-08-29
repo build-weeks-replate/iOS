@@ -51,6 +51,11 @@ class SignUpTwoViewController: UIViewController {
         createUser()
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
+    
     
      // MARK: - Navigation
      
@@ -90,6 +95,28 @@ class SignUpTwoViewController: UIViewController {
         }
     }
     
+    func passwordsDontMatch() {
+        if nextPagePressed.tag == 0 {
+            if businessPasswordTextField.text != businessConfirmPasswordTextField.text {
+                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        } else {
+            if volunteerPasswordTextField.text != volunteerConfirmPasswordTextField.text {
+                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
+    
+    // MARK: UI
+    
     func updateViews() {
         updateTextFields()
     }
@@ -100,6 +127,7 @@ class SignUpTwoViewController: UIViewController {
             businessEmailTextField.addLeftPadding(20)
             businessPasswordTextField.addLeftPadding(20)
             businessConfirmPasswordTextField.addLeftPadding(20)
+            
         } else {
             volunteerUsernameTextField.addLeftPadding(20)
             volunteerEmailTextField.addLeftPadding(20)
@@ -144,23 +172,4 @@ class SignUpTwoViewController: UIViewController {
         }
     }
     
-    func passwordsDontMatch() {
-        if nextPagePressed.tag == 0 {
-            if businessPasswordTextField.text != businessConfirmPasswordTextField.text {
-                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-        } else {
-            if volunteerPasswordTextField.text != volunteerConfirmPasswordTextField.text {
-                let alertController = UIAlertController(title: "Passwords don't match", message: "Please re-type password", preferredStyle: .alert)
-                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-                
-                alertController.addAction(defaultAction)
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
-    }
 }
