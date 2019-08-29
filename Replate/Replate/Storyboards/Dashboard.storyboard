@@ -25,10 +25,89 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Today's Food-->
+        <!--View Controller-->
+        <scene sceneID="Wvh-db-Iq3">
+            <objects>
+                <viewController modalTransitionStyle="crossDissolve" id="SNH-OV-TOK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cru-S1-tp3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stw-Tz-NEK" customClass="PopUp" customModule="Replate" customModuleProvider="target">
+                                <rect key="frame" x="11" y="257" width="353" height="298"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-3U-pVU">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="19"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="s1S-yF-lBB" kind="unwind" unwindAction="unwindToDashboard:" id="CiM-Dd-s9I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-Mu-x0b">
+                                        <rect key="frame" x="9" y="195.66666666666669" width="335" height="50"/>
+                                        <color key="backgroundColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <state key="normal" title="Sign Out" backgroundImage="SecondaryButton">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="claimPressed:" destination="WNf-tK-3Dq" eventType="touchUpInside" id="BI3-cb-FNc"/>
+                                            <segue destination="Ytk-XA-OJS" kind="show" identifier="SignOutUser" id="csJ-5i-A34"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to sign out?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eII-lW-HPX">
+                                        <rect key="frame" x="32" y="85" width="289.33333333333331" height="24.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
+                                        <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.95119863013698636" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bZi-Mu-x0b" firstAttribute="centerX" secondItem="stw-Tz-NEK" secondAttribute="centerX" id="1FC-wE-BLI"/>
+                                    <constraint firstItem="eII-lW-HPX" firstAttribute="top" secondItem="stw-Tz-NEK" secondAttribute="top" constant="85" id="1oH-M7-pe1"/>
+                                    <constraint firstItem="eII-lW-HPX" firstAttribute="centerX" secondItem="stw-Tz-NEK" secondAttribute="centerX" id="5rI-Qd-sSY"/>
+                                    <constraint firstAttribute="width" constant="353" id="8nW-TB-2L8"/>
+                                    <constraint firstItem="bZi-Mu-x0b" firstAttribute="top" secondItem="eII-lW-HPX" secondAttribute="bottom" constant="86" id="FXJ-3M-R5W"/>
+                                    <constraint firstAttribute="width" secondItem="stw-Tz-NEK" secondAttribute="height" multiplier="353:298" id="cxR-xk-dH6"/>
+                                    <constraint firstAttribute="height" constant="298" id="iNk-cC-Pcg"/>
+                                    <constraint firstAttribute="bottom" secondItem="bZi-Mu-x0b" secondAttribute="bottom" constant="52.333333333333314" id="zuw-Tm-6yo"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="stw-Tz-NEK" firstAttribute="centerX" secondItem="Cru-S1-tp3" secondAttribute="centerX" id="hGL-Dv-xXN"/>
+                            <constraint firstItem="stw-Tz-NEK" firstAttribute="centerY" secondItem="Cru-S1-tp3" secondAttribute="centerY" id="ld6-Fy-zcr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qlL-pI-Pcg"/>
+                    </view>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="FEU-mx-HQx">
+                        <barButtonItem key="backBarButtonItem" title="Replate" id="27e-FV-lu6"/>
+                        <barButtonItem key="leftBarButtonItem" image="Back Button" id="BWf-n5-ybG"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cBj-fa-gnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="s1S-yF-lBB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="165.59999999999999" y="-597.78325123152717"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="w5w-Y4-6r1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SignIn" id="Ytk-XA-OJS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="123-hv-kNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729" y="-552"/>
+        </scene>
+         <!--Today's Food-->
         <scene sceneID="WdO-ii-qC1">
             <objects>
-                <collectionViewController id="wR8-GZ-b4W" customClass="DashboardCollectionViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController storyboardIdentifier="DashboardScreen" id="wR8-GZ-b4W" customClass="DashboardCollectionViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="xvO-kB-VAo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -180,6 +259,7 @@
                                 <color key="tintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="settingsPressed:" destination="wR8-GZ-b4W" id="kfe-Cf-vie"/>
+                                    <segue destination="SNH-OV-TOK" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="coverVertical" id="wks-1O-tnw"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -996,9 +1076,11 @@
     </scenes>
     <resources>
         <image name="Add" width="32" height="32"/>
-        <image name="Group 5" width="166.33332824707031" height="111"/>
         <image name="Next" width="17" height="32"/>
         <image name="Settings" width="32" height="32"/>
+        <image name="Back Button" width="13" height="22"/>
+        <image name="Group 5" width="166.33332824707031" height="111"/>
+        <image name="SecondaryButton" width="335" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="O1e-O2-0vf"/>
