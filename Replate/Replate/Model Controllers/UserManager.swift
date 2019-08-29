@@ -15,7 +15,7 @@ class UserManager {
     var userType: UserType = .business
     
     // Dummy Business Name
-    var businessOwner: Business = Business(username: "bestprice", email: "bestprice@gmail.com", password:"bp123")
+    var businessOwner: Business = Business(username: "tompskin", email: "tompskin@gmail.com", password:"tom123")
     
     private init() {
         businessOwner.organizationName = "Tompskin Square Bagel"
