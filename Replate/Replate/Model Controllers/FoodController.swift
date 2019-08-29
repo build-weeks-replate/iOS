@@ -10,7 +10,7 @@ import Foundation
 
 class FoodController {
     var foodItems: [FoodItem] = [
-        FoodItem(name: "Bagels", time: "09:00 PM", description: "Donated to Bowery.", is_claimed: false, pickup_date: "\(Date().dateString())", organization_name: "Tompskin Square Bagel"),
+        FoodItem(name: "Bagels", time: "09:00 PM", description: "Donated to Bowery.", is_claimed: true, pickup_date: "\(Date().dateString())", organization_name: "Tompskin Square Bagel"),
         FoodItem(name: "Pizza", time: "09:30 PM", description: "Quantity 10 boxes.", is_claimed: false, pickup_date: "\(Date().dateString())", organization_name: "Sauce Pizza"),
         FoodItem(name: "Fried Chicken", time: "10:30 PM", description: "Call to the store before pick up time.", is_claimed: false, pickup_date: "\(Date().dateString())", organization_name: "Popeye's"),
         FoodItem(name: "Cookies", time: "06:30 PM", description: "5 boxes left", is_claimed: false, pickup_date: "\(Date().dateString())", organization_name: "Tompskin Square Bagel"),

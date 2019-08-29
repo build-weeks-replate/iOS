@@ -15,5 +15,4 @@ class FoodItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var claimedView: UIView!
     @IBOutlet weak var businessLabel: UILabel!
-    
 }
