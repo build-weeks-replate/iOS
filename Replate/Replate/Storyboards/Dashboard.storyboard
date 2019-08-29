@@ -500,7 +500,7 @@
                                                                 </constraints>
                                                                 <nil key="textColor"/>
                                                                 <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="17"/>
-                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="done"/>
+                                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
                                                             </textField>
                                                         </subviews>
                                                     </stackView>
@@ -992,6 +992,6 @@
         <image name="Group 5" width="166.33332824707031" height="111"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dE6-u2-0La"/>
+        <segue reference="O1e-O2-0vf"/>
     </inferredMetricsTieBreakers>
 </document>
