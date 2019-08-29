@@ -18,17 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo-white" translatesAutoresizingMaskIntoConstraints="NO" id="eRq-2f-unV">
-                                <rect key="frame" x="132" y="440" width="150" height="16"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="150" id="6d7-XW-N64"/>
-                                </constraints>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch Screen" translatesAutoresizingMaskIntoConstraints="NO" id="eRq-2f-unV">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.12156862745098039" green="0.36078431372549019" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.97647058819999999" green="0.62745098040000002" blue="0.1215686275" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="eRq-2f-unV" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="GOv-We-O3A"/>
                             <constraint firstItem="eRq-2f-unV" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TY1-ju-0FD"/>
                             <constraint firstItem="eRq-2f-unV" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="We0-vq-b0T"/>
+                            <constraint firstItem="eRq-2f-unV" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="eoo-vm-eT9"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -39,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Logo-white" width="135" height="51.5"/>
+        <image name="Launch Screen" width="375" height="812"/>
     </resources>
 </document>
