@@ -19,6 +19,7 @@ class EditDonationViewController: UIViewController {
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var phoneLabel: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var foodItem: FoodItem?
     var foodController: FoodController?
@@ -26,6 +27,9 @@ class EditDonationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.foodTextField.delegate = self
+        self.descriptionTextField.delegate = self
 
         self.foodTextField.text = foodItem?.name
         self.descriptionTextField.text = foodItem?.description
@@ -33,6 +37,15 @@ class EditDonationViewController: UIViewController {
         self.timeLabel.text = foodItem?.time
         self.addressLabel.text = "1234 Massachusetts Ave"
         self.phoneLabel.text = "321-456-7891"
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name:UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // removing the line
+        self.navigationController?.navigationBar.shouldRemoveShadow(true)
     }
     
     @IBAction func cancelPressed(_ sender: Any) {
@@ -71,3 +84,35 @@ extension EditDonationViewController: DatePickerDelegate {
         self.timeLabel.text = pickupTime
     }
 }
+
+extension EditDonationViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if textField == self.foodTextField {
+            self.descriptionTextField.becomeFirstResponder()
+        }
+        
+        if textField == self.descriptionTextField {
+            self.descriptionTextField.resignFirstResponder()
+        }
+        
+        return true
+    }
+    
+    @objc func keyboardWillShow(notification:NSNotification){
+        
+        var userInfo = notification.userInfo!
+        var keyboardFrame:CGRect = (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        keyboardFrame = self.view.convert(keyboardFrame, from: nil)
+        
+        var contentInset:UIEdgeInsets = self.scrollView.contentInset
+        contentInset.bottom = keyboardFrame.size.height
+        self.scrollView.contentInset = contentInset
+    }
+    
+    @objc func keyboardWillHide(notification:NSNotification){
+        
+        let contentInset:UIEdgeInsets = UIEdgeInsets.zero
+        self.scrollView.contentInset = contentInset
+    }
+}
+

@@ -16,7 +16,7 @@ class DashboardCollectionViewController: UICollectionViewController {
     @IBOutlet weak var todaysDateLabel: UILabel!
     
     let foodController = FoodController()
-    let userType: UserType = .business
+    let userManager = UserManager.shared
     
     // Telling search controller for using the same view to display the results by using nil value
     let searchController = UISearchController(searchResultsController: nil)
@@ -29,14 +29,10 @@ class DashboardCollectionViewController: UICollectionViewController {
         
         self.todaysDateLabel.text = Date().dateString().uppercased()
         
-        // Dummy Business Name
-        var businessOwner: Business = Business(username: "bestprice", email: "bestprice@gmail.com", password:"bp123")
-        businessOwner.organizationName = "Tompskin Square Bagel"
-        
         // User Type Dashboard
-        switch userType {
+        switch userManager.userType {
         case .business:
-            foodController.foodItems = aBusiness(businessOwner.organizationName)
+            foodController.foodItems = aBusiness(UserManager.shared.businessOwner.organizationName)
 
         case .volunteer:
             navigationItem.rightBarButtonItems?.removeFirst()

@@ -20,10 +20,20 @@ class DetailViewController: UIViewController {
     
     var foodItem: FoodItem?
     var foodController: FoodController?
+    let userManager = UserManager.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateViews()
+        
+        // User Type Dashboard
+        switch userManager.userType {
+        case .business:
+            self.claimButton.isHidden = true
+            
+        case .volunteer:
+            navigationItem.rightBarButtonItems?.removeFirst()
+        }
     }
     
     func updateViews() {

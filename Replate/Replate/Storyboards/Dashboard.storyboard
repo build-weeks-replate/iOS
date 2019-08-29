@@ -29,7 +29,7 @@
         <scene sceneID="WdO-ii-qC1">
             <objects>
                 <collectionViewController id="wR8-GZ-b4W" customClass="DashboardCollectionViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="xvO-kB-VAo">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="xvO-kB-VAo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -681,6 +681,7 @@
                     <connections>
                         <outlet property="descriptionTextField" destination="Xkg-LY-Mkp" id="38c-E6-B0z"/>
                         <outlet property="foodTextField" destination="eUU-1T-bBL" id="kYr-HS-67x"/>
+                        <outlet property="scrollView" destination="oNq-B0-zSO" id="8Ay-4B-Bv9"/>
                         <outlet property="timeLabel" destination="quJ-xc-MiB" id="bmS-Cm-1U6"/>
                         <outlet property="todayLabel" destination="RjZ-d8-qW4" id="BGt-Cs-ZHx"/>
                     </connections>
@@ -753,7 +754,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-ok-0pL">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-ok-0pL">
                                 <rect key="frame" x="0.0" y="140" width="375" height="638"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qf-qe-YIS">
@@ -962,6 +963,7 @@
                         <outlet property="descriptionTextField" destination="9St-LD-7dZ" id="a82-9h-Gn8"/>
                         <outlet property="foodTextField" destination="Xz9-4K-bnD" id="7rt-LN-JmT"/>
                         <outlet property="phoneLabel" destination="Eow-0X-DBa" id="1iP-bw-vTF"/>
+                        <outlet property="scrollView" destination="cvv-ok-0pL" id="ooS-9g-r2b"/>
                         <outlet property="timeLabel" destination="3Rt-ZF-gYA" id="gO4-cm-WRn"/>
                     </connections>
                 </viewController>
@@ -992,6 +994,6 @@
         <image name="Group 5" width="166.33332824707031" height="111"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="O1e-O2-0vf"/>
+        <segue reference="dE6-u2-0La"/>
     </inferredMetricsTieBreakers>
 </document>

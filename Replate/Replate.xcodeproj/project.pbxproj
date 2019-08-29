@@ -16,6 +16,7 @@
 		E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF12314D38D00AA3FF0 /* Volunteer.swift */; };
 		E3745BF42314D38D00AA3FF0 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF22314D38D00AA3FF0 /* Business.swift */; };
 		E3745BF92317142100AA3FF0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BF82317142100AA3FF0 /* User.swift */; };
+		E3745BFB23176C3100AA3FF0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3745BFA23176C3100AA3FF0 /* UserManager.swift */; };
 		E3C90182230F2A7B009F9844 /* SignUpThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */; };
 		E3C90183230F2A7B009F9844 /* SignUpTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */; };
 		E3C90184230F2A7B009F9844 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3C9017B230F2A7B009F9844 /* SignInViewController.swift */; };
@@ -52,6 +53,7 @@
 		E3745BF12314D38D00AA3FF0 /* Volunteer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Volunteer.swift; sourceTree = "<group>"; };
 		E3745BF22314D38D00AA3FF0 /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		E3745BF82317142100AA3FF0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E3745BFA23176C3100AA3FF0 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpThreeViewController.swift; sourceTree = "<group>"; };
 		E3C9017A230F2A7B009F9844 /* SignUpTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpTwoViewController.swift; sourceTree = "<group>"; };
 		E3C9017B230F2A7B009F9844 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				E3E24E342310226E00CD105B /* FoodController.swift */,
 				E3745BEC2314D37400AA3FF0 /* VolunteerController.swift */,
 				E3745BED2314D37400AA3FF0 /* BusinessController.swift */,
+				E3745BFA23176C3100AA3FF0 /* UserManager.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -142,10 +145,10 @@
 			isa = PBXGroup;
 			children = (
 				E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */,
+				E3C9017C230F2A7B009F9844 /* DetailViewController.swift */,
 				E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */,
 				E3C9017E230F2A7B009F9844 /* EditDonationViewController.swift */,
 				E3E24E38231371F400CD105B /* DatePickerViewController.swift */,
-				E3C9017C230F2A7B009F9844 /* DetailViewController.swift */,
 				E3C9017B230F2A7B009F9844 /* SignInViewController.swift */,
 				E3C9017D230F2A7B009F9844 /* SignUpOneViewController.swift */,
 				E3C90179230F2A7A009F9844 /* SignUpThreeViewController.swift */,
@@ -286,6 +289,7 @@
 				D8F38BD8230E396600C007F6 /* AppDelegate.swift in Sources */,
 				E3C90185230F2A7B009F9844 /* DetailViewController.swift in Sources */,
 				E3745BF92317142100AA3FF0 /* User.swift in Sources */,
+				E3745BFB23176C3100AA3FF0 /* UserManager.swift in Sources */,
 				E3E24E3223101EA600CD105B /* FoodItemCollectionViewCell.swift in Sources */,
 				E3745BF32314D38D00AA3FF0 /* Volunteer.swift in Sources */,
 				E3C90187230F2A7B009F9844 /* EditDonationViewController.swift in Sources */,
