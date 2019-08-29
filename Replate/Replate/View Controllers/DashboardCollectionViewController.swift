@@ -16,7 +16,7 @@ class DashboardCollectionViewController: UICollectionViewController {
     @IBOutlet weak var todaysDateLabel: UILabel!
     
     let foodController = FoodController()
-    let userType: UserType = .volunteer
+    let userType: UserType = .business
     
     // Telling search controller for using the same view to display the results by using nil value
     let searchController = UISearchController(searchResultsController: nil)
@@ -29,10 +29,14 @@ class DashboardCollectionViewController: UICollectionViewController {
         
         self.todaysDateLabel.text = Date().dateString().uppercased()
         
+        // Dummy Business Name
+        var businessOwner: Business = Business(username: "bestprice", email: "bestprice@gmail.com", password:"bp123")
+        businessOwner.organizationName = "Tompskin Square Bagel"
+        
         // User Type Dashboard
         switch userType {
         case .business:
-            print("Business")
+            foodController.foodItems = aBusiness(businessOwner.organizationName)
 
         case .volunteer:
             navigationItem.rightBarButtonItems?.removeFirst()
@@ -57,15 +61,23 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     // MARK: - Private Functions
     
+    func aBusiness(_ name: String) -> [FoodItem] {
+        let foodItems = self.foodController.foodItems
+        
+        return foodItems.filter { (foodItem) -> Bool in
+            foodItem.organization_name == name
+        }
+    }
+    
     func searchBarIsEmpty() -> Bool {
         // Returns true if the text is empty or nil
         return searchController.searchBar.text?.isEmpty ?? true
     }
     
-    func filterContentForSearchText(_ searchText: String, scope: String = "All") {
+    func filterContentForSearchText(_ searchText: String) {
         filteredFood = foodController.foodItems.filter({( foodItem: FoodItem) -> Bool in
             return foodItem.name.lowercased().contains(searchText.lowercased()) ||
-                foodItem.business?.lowercased().contains(searchText.lowercased()) == true
+                foodItem.organization_name?.lowercased().contains(searchText.lowercased()) == true
         })
         
         collectionView.reloadData()
@@ -132,15 +144,15 @@ class DashboardCollectionViewController: UICollectionViewController {
         
         let food: FoodItem
         if isFiltering() {
-            food = filteredFood[indexPath.item]
+            food = filteredFood[indexPath.item] // search view
         } else {
-            food = foodController.foodItems[indexPath.item]
+            food = foodController.foodItems[indexPath.item] // volunteer dashboard
         }
         
-        cell.imageView.image = UIImage(named: "\(food.name.lowercased())")
+        cell.imageView.image = UIImage(named: "\(food.name.lowercased())") ?? UIImage(named: "no title")
         cell.titleLabel.text = food.name
         cell.timeLabel.text = food.time
-        cell.businessLabel.text = food.business
+        cell.businessLabel.text = food.organization_name
         
         cell.claimedView.isHidden = !food.is_claimed
 

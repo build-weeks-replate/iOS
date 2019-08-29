@@ -141,9 +141,9 @@
 		E3C90166230F0F0F009F9844 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */,
 				E3C90181230F2A7B009F9844 /* AddDonationViewController.swift */,
 				E3C9017E230F2A7B009F9844 /* EditDonationViewController.swift */,
-				E3C90180230F2A7B009F9844 /* DashboardCollectionViewController.swift */,
 				E3E24E38231371F400CD105B /* DatePickerViewController.swift */,
 				E3C9017C230F2A7B009F9844 /* DetailViewController.swift */,
 				E3C9017B230F2A7B009F9844 /* SignInViewController.swift */,

@@ -17,18 +17,18 @@ struct FoodItem: Codable, Equatable {
     let pickup_date: String
     
     // temporary until we have the API
-    var business: String?
+    var organization_name: String?
     
-    init(name: String, time: String, description: String, is_claimed: Bool, pickup_date: String, business: String? = "") {
+    init(name: String, time: String, description: String, is_claimed: Bool, pickup_date: String, organization_name: String? = "") {
         self.name = name
         self.time = time
         self.description = description
         self.pickup_date = pickup_date
         self.is_claimed = false
-        self.business = business
+        self.organization_name = organization_name
     }
     
     enum CodingKeys: String, CodingKey {
-        case id, name, time, description, is_claimed, pickup_date, business
+        case id, name, time, description, is_claimed, pickup_date, organization_name
     }
 }
