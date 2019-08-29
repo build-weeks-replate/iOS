@@ -169,13 +169,15 @@
                             </view>
                         </barButtonItem>
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="ihr-CA-Fvl">
+                            <barButtonItem image="Add" id="ihr-CA-Fvl">
+                                <color key="tintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="addPressed:" destination="wR8-GZ-b4W" id="Yuq-go-cIf"/>
                                     <segue destination="1Ue-fg-c9q" kind="show" identifier="AddSegue" id="Y9u-b1-bZh"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Settings" id="zR0-LT-P2H">
+                            <barButtonItem title="Settings" image="Settings" width="16" id="zR0-LT-P2H">
+                                <color key="tintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="settingsPressed:" destination="wR8-GZ-b4W" id="kfe-Cf-vie"/>
                                 </connections>
@@ -556,11 +558,12 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-4V-k7I">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KgD-4V-k7I">
                                                                         <rect key="frame" x="279" y="0.0" width="40" height="53.666666666666664"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="40" id="fqn-yn-xlU"/>
                                                                         </constraints>
+                                                                        <state key="normal" image="Next"/>
                                                                         <connections>
                                                                             <segue destination="svU-D2-3GL" kind="show" identifier="TimeSegue" id="O1e-O2-0vf"/>
                                                                         </connections>
@@ -835,11 +838,12 @@
                                                                             </label>
                                                                         </subviews>
                                                                     </stackView>
-                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqp-ah-5DZ">
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqp-ah-5DZ">
                                                                         <rect key="frame" x="279" y="0.0" width="40" height="53.666666666666664"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="40" id="ATK-tt-5Pe"/>
                                                                         </constraints>
+                                                                        <state key="normal" image="Next"/>
                                                                         <connections>
                                                                             <segue destination="svU-D2-3GL" kind="show" identifier="TimeSegue" id="dE6-u2-0La"/>
                                                                         </connections>
@@ -991,9 +995,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Add" width="32" height="32"/>
         <image name="Group 5" width="166.33332824707031" height="111"/>
+        <image name="Next" width="17" height="32"/>
+        <image name="Settings" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dE6-u2-0La"/>
+        <segue reference="O1e-O2-0vf"/>
     </inferredMetricsTieBreakers>
 </document>
