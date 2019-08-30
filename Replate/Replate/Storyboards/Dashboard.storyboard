@@ -36,11 +36,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="stw-Tz-NEK" customClass="PopUp" customModule="Replate" customModuleProvider="target">
                                 <rect key="frame" x="11" y="257" width="353" height="298"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-3U-pVU">
-                                        <rect key="frame" x="0.0" y="0.0" width="30" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="19"/>
-                                        <state key="normal" title="X">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ycx-3U-pVU">
+                                        <rect key="frame" x="15" y="15" width="20" height="22"/>
+                                        <state key="normal" image="Close">
                                             <color key="titleColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
@@ -48,9 +46,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bZi-Mu-x0b">
-                                        <rect key="frame" x="9" y="195.66666666666669" width="335" height="50"/>
+                                        <rect key="frame" x="9" y="205.66666666666669" width="335" height="40"/>
                                         <color key="backgroundColor" red="0.98431372549999996" green="0.62745098040000002" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="zAb-kY-oUE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="15"/>
                                         <state key="normal" title="Sign Out" backgroundImage="SecondaryButton">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -60,8 +61,8 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you sure you want to sign out?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eII-lW-HPX">
-                                        <rect key="frame" x="32" y="85" width="289.33333333333331" height="24.666666666666671"/>
-                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="18"/>
+                                        <rect key="frame" x="35" y="85" width="283.33333333333331" height="34.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-SemiBold" family="Open Sans" pointSize="17"/>
                                         <color key="textColor" red="0.42745098040000001" green="0.44705882349999998" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -71,10 +72,12 @@
                                     <constraint firstItem="bZi-Mu-x0b" firstAttribute="centerX" secondItem="stw-Tz-NEK" secondAttribute="centerX" id="1FC-wE-BLI"/>
                                     <constraint firstItem="eII-lW-HPX" firstAttribute="top" secondItem="stw-Tz-NEK" secondAttribute="top" constant="85" id="1oH-M7-pe1"/>
                                     <constraint firstItem="eII-lW-HPX" firstAttribute="centerX" secondItem="stw-Tz-NEK" secondAttribute="centerX" id="5rI-Qd-sSY"/>
+                                    <constraint firstItem="Ycx-3U-pVU" firstAttribute="leading" secondItem="stw-Tz-NEK" secondAttribute="leading" constant="15" id="6aj-P3-OJm"/>
                                     <constraint firstAttribute="width" constant="353" id="8nW-TB-2L8"/>
                                     <constraint firstItem="bZi-Mu-x0b" firstAttribute="top" secondItem="eII-lW-HPX" secondAttribute="bottom" constant="86" id="FXJ-3M-R5W"/>
                                     <constraint firstAttribute="width" secondItem="stw-Tz-NEK" secondAttribute="height" multiplier="353:298" id="cxR-xk-dH6"/>
                                     <constraint firstAttribute="height" constant="298" id="iNk-cC-Pcg"/>
+                                    <constraint firstItem="Ycx-3U-pVU" firstAttribute="top" secondItem="stw-Tz-NEK" secondAttribute="top" constant="15" id="uLc-fE-2SV"/>
                                     <constraint firstAttribute="bottom" secondItem="bZi-Mu-x0b" secondAttribute="bottom" constant="52.333333333333314" id="zuw-Tm-6yo"/>
                                 </constraints>
                             </view>
@@ -94,7 +97,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBj-fa-gnA" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="s1S-yF-lBB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="165.59999999999999" y="-597.78325123152717"/>
+            <point key="canvasLocation" x="1062" y="-539"/>
         </scene>
         <!--SignIn-->
         <scene sceneID="w5w-Y4-6r1">
@@ -102,9 +105,9 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="SignIn" id="Ytk-XA-OJS" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="123-hv-kNs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="729" y="-552"/>
+            <point key="canvasLocation" x="1956" y="-539"/>
         </scene>
-         <!--Today's Food-->
+        <!--Today's Food-->
         <scene sceneID="WdO-ii-qC1">
             <objects>
                 <collectionViewController storyboardIdentifier="DashboardScreen" id="wR8-GZ-b4W" customClass="DashboardCollectionViewController" customModule="Replate" customModuleProvider="target" sceneMemberID="viewController">
@@ -255,7 +258,7 @@
                                     <segue destination="1Ue-fg-c9q" kind="show" identifier="AddSegue" id="Y9u-b1-bZh"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Settings" image="Settings" width="16" id="zR0-LT-P2H">
+                            <barButtonItem title="Settings" image="Settings" width="10" id="zR0-LT-P2H">
                                 <color key="tintColor" red="0.12549019610000001" green="0.36078431370000003" blue="0.43921568630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="settingsPressed:" destination="wR8-GZ-b4W" id="kfe-Cf-vie"/>
@@ -266,6 +269,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="addButton" destination="ihr-CA-Fvl" id="p7C-GQ-V0o"/>
+                        <outlet property="settingsButton" destination="zR0-LT-P2H" id="asO-Gp-jgm"/>
                         <outlet property="todaysDateLabel" destination="qvQ-8H-9m6" id="KLd-fz-Ejc"/>
                     </connections>
                 </collectionViewController>
@@ -1075,12 +1079,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Add" width="32" height="32"/>
-        <image name="Next" width="17" height="32"/>
-        <image name="Settings" width="32" height="32"/>
+        <image name="Add" width="20" height="20"/>
         <image name="Back Button" width="13" height="22"/>
+        <image name="Close" width="20" height="20"/>
         <image name="Group 5" width="166.33332824707031" height="111"/>
+        <image name="Next" width="12" height="20"/>
         <image name="SecondaryButton" width="335" height="50"/>
+        <image name="Settings" width="20" height="20"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="O1e-O2-0vf"/>

@@ -31,7 +31,10 @@ class DetailViewController: UIViewController {
         case .business:
             self.claimButton.isHidden = true
         case .volunteer:
-            navigationItem.rightBarButtonItems?.removeFirst()
+            guard let rightButton = navigationItem.rightBarButtonItems else { return }
+            if rightButton.count > 0 {
+                navigationItem.rightBarButtonItems?.removeFirst()
+            }
         }
     }
     

@@ -14,6 +14,7 @@ class DashboardCollectionViewController: UICollectionViewController {
     
     @IBOutlet weak var addButton: UIBarButtonItem!
     @IBOutlet weak var todaysDateLabel: UILabel!
+    @IBOutlet weak var settingsButton: UIBarButtonItem!
     
     let foodController = FoodController()
     let userManager = UserManager.shared
@@ -45,6 +46,9 @@ class DashboardCollectionViewController: UICollectionViewController {
             // Ensure the search bar does not remain on the screen if the user navigates to another view controller
             definesPresentationContext = true
         }
+        
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

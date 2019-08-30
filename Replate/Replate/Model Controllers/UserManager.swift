@@ -12,7 +12,7 @@ class UserManager {
     static let shared = UserManager()
     
     // Change the type to see the dashboard
-    var userType: UserType = .business
+    var userType: UserType = .volunteer
     
     // Dummy Business Name
     var businessOwner: Business = Business(username: "tompskin", email: "tompskin@gmail.com", password:"tom123")
